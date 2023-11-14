@@ -62,3 +62,8 @@ CREATE TABLE IF NOT EXISTS ApplicationReference(
     FOREIGN KEY (ApplicationID) REFERENCES ApplicationPersonal(ApplicationID)
 );
 
+--query to retrieve all application info
+SELECT * FROM ApplicationPersonal;
+SELECT * FROM ApplicationEmployment;
+SELECT * FROM ApplicationEducation;
+SELECT * FROM ApplicationReference;
