@@ -95,13 +95,12 @@ UserModel.init(
             type: DataTypes.STRING(50),
             allowNull: true,
         },
-
+        
         email: {
             type: DataTypes.STRING(50),
             allowNull: false,
             unique: true,
         },
-
         /* //day that the account was created within the database
         insertion_date: {
             type: DataTypes.DATE,
