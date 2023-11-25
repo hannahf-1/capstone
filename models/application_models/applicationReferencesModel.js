@@ -1,6 +1,6 @@
 "use strict";
 
-import { sequelize_instance } from "../../db_shared.js";
+import { sequelize_instance } from "../../../config/db_shared.js";
 import { DataTypes, Model } from "sequelize";
 import { model as ApplicationPersonalModel } from "./applicationPersonalModel.js";
 

@@ -1,6 +1,6 @@
 "use strict";
 
-import { sequelize_instance } from "../db_shared.js" //sequalize instance
+import mariadb from "../config/db_shared.js" //contains sequalize instance
 import { DataTypes, Model } from "sequelize"
 
 class UserModel extends Model {
@@ -95,7 +95,7 @@ UserModel.init(
             type: DataTypes.STRING(50),
             allowNull: true,
         },
-        
+
         email: {
             type: DataTypes.STRING(50),
             allowNull: false,
@@ -114,7 +114,7 @@ UserModel.init(
         } */
 
     }, {
-    sequelize: sequelize_instance,
+    sequelize: mariadb.sequelize,
     timestamps: true,
     modelName: 'users',
 })

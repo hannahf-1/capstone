@@ -1,6 +1,6 @@
 "use strict";
 
-import { sequelize_instance } from "../db_shared.js";
+import { sequelize_instance } from "../../config/db_shared.js";
 import { DataTypes, Model, UUIDV4 } from "sequelize";
 
 class ReservationModel extends Model { 

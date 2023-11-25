@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/runner.js"
+            "program": "${workspaceFolder}/db_tester.js"
         }
     ]
 }
