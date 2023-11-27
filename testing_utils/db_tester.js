@@ -1,5 +1,7 @@
-import mariadb from "./config/db_shared.js"
-import { model as UserModel } from "./models/userAccountModel.js"
+"use strict";
+
+import mariadb from "../config/maria_db.js"
+import { model as UserModel } from "../models/userAccountModel.js"
 // import { model as MenuModel } from "./models/menuModel.js"
 // import { model as ReservationModel } from "./models/reservationModel.js"
 // import { model as review } from './models/reviewModel.js'

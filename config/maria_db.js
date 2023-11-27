@@ -2,31 +2,38 @@
 
 "use strict";
 import { Sequelize } from 'sequelize';
+import env_config from './env_config.js';
 
 
-const mariadb = () => {
+export default class mariadb_connector {
 
-    const sequelize = new Sequelize("miguelsDB_dev", "miguelsDB_access", "Yc6N3BYWjCZt",
+    static #sequelize = new Sequelize(env_config.DB_NAME, env_config.DB_USER, env_config.DB_PASS,
         {
-            host: "csdevweb.vps.webdock.cloud",
-            dialect: "mariadb"
+            host: env_config.DB_HOST,
+            port: env_config.DB_PORT || 3306,
+            dialect: env_config.DB_DIALECT || "mariadb"
         }
     );
 
-    async function connect() {
+    static get sequelize() {
+        return mariadb_connector.#sequelize;
+    }
+
+    static async connect() {
         console.log(">Connecting to DB ----");
-        return await sequelize.authenticate().then(() => {
+        return await mariadb_connector.#sequelize.authenticate().then(() => {
             console.log(">connection established");
         }).catch((err) => {
             console.log(">Could not establish a connection: ", err);
         })
+
     };
 
-    function disconnect() {
-        sequelize.close();
+    static async disconnect() {
+        return mariadb_connector.#sequelize.close();
     }
 
-    async function dropTables(...models) {
+    static async dropTables(...models) {
         console.log("---- Dropping Table(s) ----")
 
         for (const model of models) {
@@ -38,7 +45,7 @@ const mariadb = () => {
     }
 
     //initializes sequelize class model 
-    async function initializeTables(...models) {
+    static async initializeTables(...models) {
         console.log("---- Starting Sync ----");
 
         console.log(models)
@@ -57,8 +64,4 @@ const mariadb = () => {
         };
         console.log("---- Sync Complete ----")
     }
-
-    connect();
 }
-
-export default mariadb;

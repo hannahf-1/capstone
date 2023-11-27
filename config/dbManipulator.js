@@ -1,7 +1,7 @@
 //will be responsible for manipulating the
 "use strict";
 
-import * as db_instance from "./db_shared.js"
+import * as db_instance from "./maria_db.js"
 import { model as UserModel } from "../models/db_models/userAccountModel.js"
 import { model as MenuModel } from "../models/db_models/menuModel.js"
 import { model as ReservationModel } from "../models/db_models/reservationModel.js"

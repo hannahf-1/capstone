@@ -1,6 +1,6 @@
 "use strict";
 
-import mariadb from "../config/db_shared.js" //contains sequalize instance
+import mariadb from "../config/maria_db.js" //contains sequalize instance
 import { DataTypes, Model } from "sequelize"
 
 class UserModel extends Model {
