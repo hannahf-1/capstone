@@ -12,9 +12,12 @@ const router = Router();
 ->  month
 - [ ] implement clever range based delete function
 - [ ] middleware
+- [ ] remove "analytics" from all routes
 
 */
 
-router.get("analytics") //query based
+router.get("analytic") //query based
 router.delete("analytics/ratings/:submissionID");
 router.delete("analytics/sales")// might get complicated
+
+export default router

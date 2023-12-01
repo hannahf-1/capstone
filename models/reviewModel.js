@@ -1,6 +1,6 @@
 "use strict";
 
-import { sequelize_instance } from "../../config/db_shared.js";
+import mariadb_connector from "../config/maria_db.js";
 import { DataTypes, Model } from "sequelize";
 
 class ReviewModel extends Model {
@@ -36,29 +36,14 @@ class ReviewModel extends Model {
 
 ReviewModel.init(
     {
-        ReviewID: {
+        reviewID: {
             type: DataTypes.INTEGER.UNSIGNED,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
-        LastName: {
-            type: DataTypes.STRING(100),
-            allowNull: false,
-        },
-        FirstName: {
-            type: DataTypes.STRING(100),
-            allowNull: false,
-        },
-        CellPhone: {
-            type: DataTypes.STRING(15),
-            allowNull: false,
-        },
-        Email: {
-            type: DataTypes.STRING(255),
-            allowNull: false,
-        },
-        Rating: {
+        
+        rating: {
             type: DataTypes.INTEGER,
             allowNull: false,
             validate: {
@@ -66,13 +51,35 @@ ReviewModel.init(
                 max: 5,
             },
         },
-        ReviewText: {
+
+        details: {
             type: DataTypes.TEXT,
             allowNull: true,
         },
+        
+        first_name: {
+            type: DataTypes.STRING(100),
+            allowNull: true,
+        },
+
+        last_name: {
+            type: DataTypes.STRING(100),
+            allowNull: true,
+        },
+
+        phone: {
+            type: DataTypes.STRING(15),
+            allowNull: true,
+        },
+
+        email: {
+            type: DataTypes.STRING(255),
+            allowNull: true,
+        },
+
     },
     {
-        sequelize: sequelize_instance,
+        sequelize: mariadb_connector.sequelize,
         timestamps: false,
         modelName: "reviews",
     }

@@ -4,6 +4,14 @@ import session from "express-session"
 import { session_config } from "../config/session.js";
 import { passport_config } from "../config/passport.js";
 import mariadb_connector from "../config/maria_db.js";
+import env_config from "../config/env_config.js";
+import validate from "../middlewares/validate.js";
+import authSchemas from "../validationSchemas/authSchemas.js";
+import authControllers from "../controllers/authControllers.js";
+import catchAsync from "../utils/catchAsync.js";
+import { model as UAC } from "../models/userAccountModel.js";
+import logger from "../config/logger.js";
+
 
 const app = express();
 app.use(express.json());
@@ -20,22 +28,33 @@ app.get("/", (req, res) => {
 });
 
 app.post('/login',
-    passport_config.authenticate("local", { failureRedirect: "login" }),
+    validate(authSchemas.login),
+    authControllers.login,
     (req, res, next) => {
-        res.render("home", { user: req.user })
+        logger.info(req.isAuthenticated());
+        res.render("home", { user: req.user, api_route: env_config.API_ROUTE })
     }
 )
+
+/* app.post('/login',
+    passport_config.authenticate("local", { failureRedirect: "login" }),
+    (req, res, next) => {
+        res.render("home", { user: req.user, api_route: env_config.API_ROUTE })
+    }
+)
+ */
 
 app.get("/login", (req, res) => {
     res.render("login");
 });
 
+
 app.get("/logout", (req, res) => {
-    console.log(req.user)
+    logger.info(req.user)
 })
 
 await mariadb_connector.connect();
 
 app.listen(3000, () => {
-    console.log("Server started on port 3000");
+    logger.info("Server started on port 3000");
 })

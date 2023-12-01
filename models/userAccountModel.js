@@ -24,7 +24,7 @@ class UserModel extends Model {
             }
         })
 
-        return {updatedRowCount, updatedRows}
+        return { updatedRowCount, updatedRows }
     }
 
     static async doesUsernameAlreadyExist(username) {
@@ -70,7 +70,7 @@ UserModel.init(
     {
         user_id: {
             type: DataTypes.UUID,
-            allowNull: true,
+            allowNull: false,
             primaryKey: true,
             defaultValue: DataTypes.UUIDV4
         },
@@ -86,6 +86,16 @@ UserModel.init(
             allowNull: true,
         },
 
+        hashedPassword: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+
+        role: {
+            type: DataTypes.STRING(10),
+            allowNull: true,
+        },
+
         first_name: {
             type: DataTypes.STRING(50),
             allowNull: true,
@@ -95,6 +105,7 @@ UserModel.init(
             type: DataTypes.STRING(50),
             allowNull: true,
         },
+
 
         email: {
             type: DataTypes.STRING(50),

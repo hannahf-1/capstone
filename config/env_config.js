@@ -10,9 +10,11 @@ if (!process.env.NODE_ENV)
 const envSchema = Joi.object()
     .keys({
         NODE_ENV: Joi.string().valid('development', 'production', 'test').required(),
+
         APP_NAME: Joi.string().allow('').empty('').default('_App Name Not Set_'),
-        HOST: Joi.string().allow('').empty('').default('localhost'),
-        PORT: Joi.number().allow('').empty('').default(663),
+        APP_HOST: Joi.string().allow('').empty('').default('localhost'),
+        APP_PORT: Joi.number().allow('').empty('').default(4000),
+        API_ROUTE: Joi.string().default("/api/v1"),
 
         DB_HOST: Joi.string().required(),
         DB_PORT: Joi.number().default(3306),
@@ -30,17 +32,20 @@ const envSchema = Joi.object()
 
 const { value: env, error } = envSchema.prefs({ errors: { label: 'key' } }).validate(process.env);
 
+const isDevelopment = () => env.NODE_ENV === "development" || env.NODE_ENV === "dev"
+const isProduction = () => env.NODE_ENV === "production" || env.NODE_ENV === "prod"
+
 if (error) {
     throw new Error(`Config env error: ${error.message}`);
 }
 
-console.log(env.SESSION_COOKIE_MAX_AGE)
-
 export default {
     NODE_ENV: env.NODE_ENV,
+
     APP_NAME: env.APP_NAME,
-    HOST: env.HOST,
-    PORT: env.PORT,
+    APP_HOST: env.APP_HOST,
+    APP_PORT: env.APP_PORT,
+    API_ROUTE: env.API_ROUTE,
 
     DB_HOST: env.DB_HOST,
     DB_PORT: env.DB_PORT,
@@ -52,4 +57,5 @@ export default {
 
     SESSION_SECRET: env.SESSION_SECRET,
     SESSION_COOKIE_MAX_AGE: env.SESSION_COOKIE_MAX_AGE,
+    isDevelopment, isProduction,
 }

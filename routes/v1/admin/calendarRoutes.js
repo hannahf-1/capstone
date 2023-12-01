@@ -9,3 +9,5 @@ router.get("getBookedEvents") //query?
 router.get("getAllEvents")  //query?
 
 router.post("createEvent") //body
+
+export default router;
