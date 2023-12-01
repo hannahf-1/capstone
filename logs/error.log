@@ -579,3 +579,190 @@ sql: ALTER TABLE `Events` ADD `date_start` DATETIME NOT NULL; - parameters:[]
     at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-12-01 12:08:30.567 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 12:10:56.343 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 12:10:56.800 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 12:32:07.352 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 12:33:31.628 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 01:08:47.881 PM: error: Error: Month string is too short
+    at #getMonthAbbreviation (file:///home/admin/dev/capstone/utils/requestUtils.js:77:43)
+    at file:///home/admin/dev/capstone/utils/requestUtils.js:21:125
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///home/admin/dev/capstone/utils/requestUtils.js:17:27)
+    at getCalendarEvents (file:///home/admin/dev/capstone/controllers/publicInfoController.js:50:47)
+    at file:///home/admin/dev/capstone/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at file:///home/admin/dev/capstone/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 01:08:51.158 PM: error: Error: Month string is too short
+    at #getMonthAbbreviation (file:///home/admin/dev/capstone/utils/requestUtils.js:77:43)
+    at file:///home/admin/dev/capstone/utils/requestUtils.js:21:125
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///home/admin/dev/capstone/utils/requestUtils.js:17:27)
+    at getCalendarEvents (file:///home/admin/dev/capstone/controllers/publicInfoController.js:50:47)
+    at file:///home/admin/dev/capstone/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at file:///home/admin/dev/capstone/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 01:10:01.940 PM: error: Error: Month string is too short
+    at #getMonthAbbreviation (file:///home/admin/dev/capstone/utils/requestUtils.js:77:77)
+    at file:///home/admin/dev/capstone/utils/requestUtils.js:21:125
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///home/admin/dev/capstone/utils/requestUtils.js:17:27)
+    at getCalendarEvents (file:///home/admin/dev/capstone/controllers/publicInfoController.js:50:47)
+    at file:///home/admin/dev/capstone/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at file:///home/admin/dev/capstone/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 01:10:11.070 PM: error: Error: Month string is too short
+    at #getMonthAbbreviation (file:///home/admin/dev/capstone/utils/requestUtils.js:77:77)
+    at file:///home/admin/dev/capstone/utils/requestUtils.js:21:125
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///home/admin/dev/capstone/utils/requestUtils.js:17:27)
+    at getCalendarEvents (file:///home/admin/dev/capstone/controllers/publicInfoController.js:50:47)
+    at file:///home/admin/dev/capstone/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at file:///home/admin/dev/capstone/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 01:10:41.283 PM: error: Error: Month string is too short
+    at #getMonthAbbreviation (file:///home/admin/dev/capstone/utils/requestUtils.js:77:77)
+    at file:///home/admin/dev/capstone/utils/requestUtils.js:21:125
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///home/admin/dev/capstone/utils/requestUtils.js:17:27)
+    at getCalendarEvents (file:///home/admin/dev/capstone/controllers/publicInfoController.js:50:47)
+    at file:///home/admin/dev/capstone/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at file:///home/admin/dev/capstone/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 01:11:35.988 PM: error: Error: Month string is too short
+    at #getMonthAbbreviation (file:///home/admin/dev/capstone/utils/requestUtils.js:77:88)
+    at file:///home/admin/dev/capstone/utils/requestUtils.js:21:125
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///home/admin/dev/capstone/utils/requestUtils.js:17:27)
+    at getCalendarEvents (file:///home/admin/dev/capstone/controllers/publicInfoController.js:50:47)
+    at file:///home/admin/dev/capstone/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at file:///home/admin/dev/capstone/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 01:12:16.124 PM: error: Error: Month string is too short
+    at #getMonthAbbreviation (file:///home/admin/dev/capstone/utils/requestUtils.js:78:43)
+    at file:///home/admin/dev/capstone/utils/requestUtils.js:21:125
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///home/admin/dev/capstone/utils/requestUtils.js:17:27)
+    at getCalendarEvents (file:///home/admin/dev/capstone/controllers/publicInfoController.js:50:47)
+    at file:///home/admin/dev/capstone/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at file:///home/admin/dev/capstone/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 01:52:22.446 PM: error: Error: Invalid month string
+    at #getMonthAbbreviation (file:///home/admin/dev/capstone/utils/requestUtils.js:85:19)
+    at file:///home/admin/dev/capstone/utils/requestUtils.js:21:125
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///home/admin/dev/capstone/utils/requestUtils.js:17:27)
+    at getCalendarEvents (file:///home/admin/dev/capstone/controllers/publicInfoController.js:50:47)
+    at file:///home/admin/dev/capstone/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at file:///home/admin/dev/capstone/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 01:52:32.646 PM: error: Error: Invalid month string
+    at #getMonthAbbreviation (file:///home/admin/dev/capstone/utils/requestUtils.js:85:19)
+    at file:///home/admin/dev/capstone/utils/requestUtils.js:21:125
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///home/admin/dev/capstone/utils/requestUtils.js:17:27)
+    at getCalendarEvents (file:///home/admin/dev/capstone/controllers/publicInfoController.js:50:47)
+    at file:///home/admin/dev/capstone/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at file:///home/admin/dev/capstone/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 01:52:34.146 PM: error: Error: Invalid month string
+    at #getMonthAbbreviation (file:///home/admin/dev/capstone/utils/requestUtils.js:85:19)
+    at file:///home/admin/dev/capstone/utils/requestUtils.js:21:125
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///home/admin/dev/capstone/utils/requestUtils.js:17:27)
+    at getCalendarEvents (file:///home/admin/dev/capstone/controllers/publicInfoController.js:50:47)
+    at file:///home/admin/dev/capstone/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at file:///home/admin/dev/capstone/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 05:51:02.735 PM: error: ReferenceError: _ is not defined
+    at file:///home/admin/dev/capstone/config/defaults.js:29:32
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at initialize (/home/admin/dev/capstone/node_modules/passport/lib/middleware/initialize.js:98:5)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+2023-12-01 06:10:51.790 PM: error: TypeError: Cannot read properties of undefined (reading 'toUpperCase')
+    at file:///home/admin/dev/capstone/config/defaults.js:46:33
+    at Array.forEach (<anonymous>)
+    at file:///home/admin/dev/capstone/config/defaults.js:45:42
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at initialize (/home/admin/dev/capstone/node_modules/passport/lib/middleware/initialize.js:98:5)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)

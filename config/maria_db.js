@@ -31,10 +31,10 @@ export default class mariadb_connector {
         return mariadb_connector.#sequelize;
     }
 
-    static async connect() {
-        logger.info(`Checking DB Connection: ${this.#sequelize.getDialect()}://${this.#sequelize.config.host}`);
+    static async check_connection() {
+        logger.info(`Checking '${this.#sequelize.getDialect()}' Connection: ${this.#sequelize.config.host}`);
         return await mariadb_connector.#sequelize.authenticate().then(() => {
-            logger.info(`Connection established to ${env_config.DB_DIALECT}`);
+            logger.info(`Connection established to ${env_config.DB_DIALECT} database`);
         }).catch((err) => {
             logger.error(">Could not establish a connection: ")
             logger.error(err.stack);

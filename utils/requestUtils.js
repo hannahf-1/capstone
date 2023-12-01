@@ -2,74 +2,98 @@
 
 import { DateTime } from "luxon";
 import logger from "../config/logger.js";
-import { Op } from "sequelize"
+import { INTEGER, Op } from "sequelize"
 
+//optimized using ChatGPT
 export class RequestUtils {
 
     static convertToSequelize = (query) => {
-        let query_entries = Object.entries(query)
-        let extracted_queries = {}
-        let sequelized = {};
-
-        if (query_entries.length) {
-            logger.debug(`Calendar Events Query: ${JSON.stringify(query)}`)
-            //queries = _.pick(queries, ["month", "id"]
+        const query_entries = Object.entries(query);
+        const sequelized = {};
+    
+        if (query_entries.length) {    
             query_entries.forEach(([key, value]) => {
                 switch (key) {
                     case "month":
-                        //sequelizeQuery["date_start"] = new Date(`${currentYear.toString()} ${value.toString()}`)
-                        extracted_queries["date_start"] = DateTime.fromFormat(`${value}`, `MM`)
+                        sequelized.where = {
+                            //if month value is passed, get all events for that month
+                            date_start: {
+                                [Op.between]: [
+                                    DateTime.fromFormat(`${value}`, RequestUtils.#getMonthAbbreviation(value)).toISO(),
+                                    DateTime.fromFormat(`${value}`, RequestUtils.#getMonthAbbreviation(value)).plus({ months: 1 }).toISO(),
+                                ],
+                            },
+                        };
                         break;
+
+                        //if id is passed, get that specific event
                     case "id":
-                        extracted_queries["id"] = value
+                        sequelized.where = { id: value };
                         break;
+
+                        //if start_date is passed, get all events from that date
                     case "start_date":
-                        extracted_queries["date_start"] = DateTime.fromISO(value)
+                        sequelized.where.date_start = {
+                            [Op.gte]: DateTime.fromISO(value).toISO(),
+                        };
                         break;
                     case "end_date":
-                        extracted_queries["date_end"] = DateTime.fromISO(value)
+                        if (!sequelized.where.date_start) {
+                            sequelized.where.date_start = {
+                                [Op.gte]: DateTime.now().toISO(),
+                            };
+                        }
+                        sequelized.where.date_end = {
+                            [Op.between]: [
+                                DateTime.fromISO(value).toISO(),
+                                DateTime.fromISO(value).plus({ days: 1 }).toISO(),
+                            ],
+                        };
                         break;
                 }
-            })
+            });
         }
-
-        if (Object.entries(extracted_queries).length)
-            sequelized.where = {};
-
-
-        if (extracted_queries.hasOwnProperty("date_start")) {
-            
-            if (!extracted_queries.hasOwnProperty("date_end")) {
-                extracted_queries["date_end"] = extracted_queries["date_start"].plus({ months: 1 })
-            }
-
-            Object.assign(sequelized.where, {
-                date_start: {
-                    [Op.between]: [extracted_queries.date_start.toISO(), extracted_queries.date_end.toISO()]
-                },
-            })
-        }
-
-        if (extracted_queries.hasOwnProperty("id")) {
-            Object.assign(sequelized.where, {id: extracted_queries.id})
-        }
-
+    
         return sequelized;
-    }
+    };
 
+    //
     static send = (req, res, data) => {
         if (res.headersSent) {
             logger.error(`Headers already sent to ${req.hostname}`)
             return;
         }
-        const hostname = req.hostname
+        const hostname = req.ip
         res.json({
             count: data.length,
             data: [data]
         })
-    
+
         if (res.headersSent)
-            logger.http(`Sent Calender information to ${hostname}`);
+            logger.http(`Sent data to ${hostname}`);
+    }
+
+    static #getMonthAbbreviation = (month_value = '') => {
+        if (!isNaN(month_value) && Number.isInteger(Number(month_value))) {
+            const month_number = Number(month_value);
+
+            if (month_number > 12 || month_number < 1)
+                throw new Error("Month number is out of range")
+
+            return "MM"
+        }
+
+        else {
+            if (!month_value || typeof month_value !== "string" || month_value.length < 3)
+                throw new Error("Invalid month string");
+
+            const month_abberivation = month_value.length > 3 ? "MMMM" : "MMM"
+            const err = DateTime.fromFormat(`${month_value}`, month_abberivation).invalidReason
+
+            if (err) throw new Error(err)
+
+            return month_abberivation
+        }
     }
 }
 

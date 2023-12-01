@@ -9,11 +9,11 @@ if (!process.env.NODE_ENV)
 
 const envSchema = Joi.object()
     .keys({
-        NODE_ENV: Joi.string().valid('development', 'production', 'test').required(),
+        NODE_ENV: Joi.string().lowercase().valid('development', 'production', 'test').required(),
 
         APP_NAME: Joi.string().allow('').empty('').default('_App Name Not Set_'),
         APP_HOST: Joi.string().allow('').empty('').default('localhost'),
-        APP_PORT: Joi.number().allow('').empty('').default(4000),
+        APP_PORT: Joi.number().required().default(3001),
         API_ROUTE: Joi.string().default("/api/v1"),
 
         DB_HOST: Joi.string().required(),
