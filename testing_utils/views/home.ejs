@@ -21,9 +21,9 @@
   	<div class="topnav-right">
 			<span class="navbar-text user-icon" style="color: white;">
 				<i class="bi bi-person-circle align-items-center" style="font-size: 22px;"></i>
-				<%= user.username ? user.username : "Guest" %>
+				<%= user.first_name ? user.first_name : "Guest" %>
 			</span>
-			<%- user.username ? '<a href="/logout">Logout</a>' : '' %>
+			<%- user.first_name ? '<a href="/logout">Logout</a>' : '' %>
 
   	</div>
 	</div>
@@ -35,7 +35,7 @@
 					<h1 class="jumbotron-heading">Meet our dogs!</h1>
 					<p class="lead">Dognation is a collaborative site from and for dogwalkers to share their friends to the world!</p>
 					<p>
-						<%- user.username ?
+						<%- user.first_name ?
 						'' :
 						'<a href="/login" class="btn btn-light my-2 mx-5">Login</a> <a href="users/register" class="btn btn-dark my-2 mx-5">Register</a>' %>
 

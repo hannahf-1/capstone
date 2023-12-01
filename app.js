@@ -1,16 +1,22 @@
 "use strict";
 
-import env_config from "./config/env_config.js"
-
 import express from "express";
 import session from "express-session"
 import cors from "cors";
-//import winston from "winston";
 import helmet from "helmet";
 
+import env_config from "./config/env_config.js"
+import session_config from "./config/session.js";
+import { passport_config as passport } from "./config/passport.js";
+import logger from "./config/logger.js";
+import routes from "./routes/v1/routes.js"
+import mariadb_connector from "./config/maria_db.js";
+import error_handler from "./middlewares/error.js";
 
-import session_config  from "./config/session.js";
-import { passport_config } from "./config/passport.js";
+//models
+import { model as Events } from "./models/eventModel.js";
+import { model as Reservation } from "./models/reservationModel.js";
+import { model as Reviews } from './models/reviewModel.js'
 
 const app = express();
 
@@ -20,29 +26,22 @@ app.use(express.urlencoded({ extended: false }));
 
 //access and security headers
 app.use(cors());
-app. use(helmet());
+app.use(helmet());
 
 //passport and session configurations
 app.use(session(session_config));
-app.use(passport_config.initialize());
-app.use(passport_config.session());
+app.use(passport.initialize());
 
+//routes
+app.use(env_config.API_ROUTE, routes);
 
-//login test routes
-app.get("/login", (req, res) => {
-    res.send("Login Page");
-})
+//custom error handling 
+app.use(error_handler.converter)
+app.use(error_handler.notFound)
+app.use(error_handler.handler)
 
-app.post('/login',
-  passport.authenticate("local", { failureRedirect: "login" }),
-  (req, res, next) => {
-    res.render("home", { user: req.user })
-  }
-)
+await mariadb_connector.connect();
 
-
-
-
-app.listen(() => {
-    console.log("Server started on port " + env_config.PORT);
+app.listen(env_config.APP_PORT, () => {
+    logger.info(`Server started on port ${env_config.APP_PORT}`);
 })

@@ -1,6 +1,6 @@
 "use strict";
 
-import { Router } from ("express");
+import { Router } from "express";
 
 //TODO: add middleware
 

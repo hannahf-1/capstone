@@ -1,0 +1,1331 @@
+2023-11-29 01:25:25.407 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 01:25:26.022 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 01:25:26.082 PM: info: Connection established to mariadb
+2023-11-29 01:25:26.088 PM: info: Server started on port 4000
+2023-11-29 01:47:47.790 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 01:47:48.445 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 01:47:48.518 PM: info: Connection established to mariadb
+2023-11-29 01:47:48.524 PM: info: Server started on port 4000
+2023-11-29 01:51:57.087 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 01:51:57.739 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 01:51:57.804 PM: info: Connection established to mariadb
+2023-11-29 01:51:57.809 PM: info: Server started on port 4000
+2023-11-29 01:53:08.134 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 01:53:08.828 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 01:53:08.888 PM: info: Connection established to mariadb
+2023-11-29 01:53:08.892 PM: info: Server started on port 4000
+2023-11-29 01:53:27.304 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 01:57:21.902 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 01:57:22.648 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 01:57:22.709 PM: info: Connection established to mariadb
+2023-11-29 01:57:22.714 PM: info: Server started on port 4000
+2023-11-29 01:57:24.125 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 01:57:24.184 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:12:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 02:04:48.206 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 02:04:48.880 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 02:04:48.948 PM: info: Connection established to mariadb
+2023-11-29 02:04:48.952 PM: info: Server started on port 4000
+2023-11-29 02:04:49.100 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:04:49.160 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:12:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 02:04:51.481 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:04:51.540 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:12:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 02:04:52.710 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:04:52.769 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:12:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 02:05:02.336 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:05:02.395 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:12:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 02:05:38.279 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:05:38.337 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:12:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 02:05:50.158 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 02:05:51.005 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 02:05:51.068 PM: info: Connection established to mariadb
+2023-11-29 02:05:51.072 PM: info: Server started on port 4000
+2023-11-29 02:05:52.386 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:05:52.454 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:12:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 02:14:27.884 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 02:14:28.529 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 02:14:28.590 PM: info: Connection established to mariadb
+2023-11-29 02:14:28.594 PM: info: Server started on port 4000
+2023-11-29 02:14:29.129 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:14:29.189 PM: error: [object Object]
+2023-11-29 02:14:51.018 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 02:14:52.095 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 02:14:52.242 PM: info: Connection established to mariadb
+2023-11-29 02:14:52.247 PM: info: Server started on port 4000
+2023-11-29 02:14:52.926 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:14:52.994 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:12:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 02:15:03.100 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 02:15:04.148 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 02:15:04.208 PM: info: Connection established to mariadb
+2023-11-29 02:15:04.213 PM: info: Server started on port 4000
+2023-11-29 02:15:04.452 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:15:04.517 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:12:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 02:17:59.001 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 02:17:59.682 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 02:17:59.741 PM: info: Connection established to mariadb
+2023-11-29 02:17:59.746 PM: info: Server started on port 4000
+2023-11-29 02:18:01.424 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:18:01.483 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:12:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 02:53:23.439 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 02:53:24.412 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 02:53:24.472 PM: info: Connection established to mariadb
+2023-11-29 02:53:24.477 PM: info: Server started on port 4000
+2023-11-29 02:53:30.515 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:53:30.632 PM: error: APIError: APIError: [object Object]
+2023-11-29 02:54:17.949 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 02:54:18.932 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 02:54:18.995 PM: info: Connection established to mariadb
+2023-11-29 02:54:18.999 PM: info: Server started on port 4000
+2023-11-29 02:54:20.804 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 02:54:20.970 PM: error: cc: APIError: [object Object]
+2023-11-29 03:55:41.709 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 03:55:42.475 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 03:55:42.535 PM: info: Connection established to mariadb
+2023-11-29 03:55:42.540 PM: info: Server started on port 4000
+2023-11-29 03:55:45.656 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 03:55:45.717 PM: debug: [object Object]
+2023-11-29 03:55:45.722 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:14:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 03:56:47.667 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 03:56:48.704 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 03:56:48.826 PM: info: Connection established to mariadb
+2023-11-29 03:56:48.830 PM: info: Server started on port 4000
+2023-11-29 03:56:56.956 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 03:56:57.084 PM: debug: {"hello":"world"}
+2023-11-29 03:56:57.086 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:14:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 04:36:25.602 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 04:36:26.946 PM: error: >Could not establish a connection: 
+2023-11-29 04:36:26.947 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-29 04:36:26.952 PM: info: Server started on port 4000
+2023-11-29 04:36:33.245 PM: debug: Executing (default): SELECT `itemID`, `name`, `category`, `category2`, `price` FROM `menus` AS `menu` WHERE `menu`.`category` = 'breakfast';
+2023-11-29 04:36:33.305 PM: debug: {"hello":"world"}
+2023-11-29 04:36:33.312 PM: error: APIError: [object Object]
+    at getItemsByCatetory (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:15:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-29 04:57:46.643 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 04:57:47.710 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 04:57:47.899 PM: info: Connection established to mariadb
+2023-11-29 04:57:47.903 PM: info: Server started on port 4000
+2023-11-29 04:57:52.123 PM: error: ReferenceError: Json is not defined
+    at file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:21:17
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:284:15
+2023-11-29 04:58:24.478 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 04:58:25.230 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 04:58:25.294 PM: info: Connection established to mariadb
+2023-11-29 04:58:25.297 PM: info: Server started on port 4000
+2023-11-29 04:58:25.411 PM: http: {}
+2023-11-29 04:58:41.040 PM: http: {}
+2023-11-29 04:58:42.647 PM: http: {}
+2023-11-29 04:59:09.023 PM: http: {}
+2023-11-29 04:59:13.418 PM: http: {}
+2023-11-29 05:00:10.628 PM: http: {}
+2023-11-29 05:00:12.613 PM: http: {}
+2023-11-29 05:00:33.574 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:00:34.288 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:00:34.348 PM: info: Connection established to mariadb
+2023-11-29 05:00:34.352 PM: info: Server started on port 4000
+2023-11-29 05:01:31.532 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:01:32.511 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:01:32.571 PM: info: Connection established to mariadb
+2023-11-29 05:01:32.575 PM: info: Server started on port 4000
+2023-11-29 05:02:25.018 PM: http: {}
+2023-11-29 05:02:46.065 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:02:46.948 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:02:47.014 PM: info: Connection established to mariadb
+2023-11-29 05:02:47.018 PM: info: Server started on port 4000
+2023-11-29 05:02:55.067 PM: http: {"type":"events"}
+2023-11-29 05:03:05.288 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:03:06.281 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:03:06.344 PM: info: Connection established to mariadb
+2023-11-29 05:03:06.348 PM: info: Server started on port 4000
+2023-11-29 05:03:08.102 PM: http: {"type":"not"}
+2023-11-29 05:05:08.928 PM: http: {"type":"not"}
+2023-11-29 05:05:44.097 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:05:45.102 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:05:45.187 PM: info: Connection established to mariadb
+2023-11-29 05:05:45.192 PM: info: Server started on port 4000
+2023-11-29 05:07:43.800 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:07:44.643 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:07:44.704 PM: info: Connection established to mariadb
+2023-11-29 05:07:44.708 PM: info: Server started on port 4000
+2023-11-29 05:07:47.648 PM: error: ValidationError: "query.type" must be one of [events, bookings]
+2023-11-29 05:09:26.176 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:09:27.342 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:09:27.402 PM: info: Connection established to mariadb
+2023-11-29 05:09:27.406 PM: info: Server started on port 4000
+2023-11-29 05:09:29.462 PM: error: ValidationError: "query.type" must be one of [events, bookings]
+2023-11-29 05:09:38.472 PM: http: {"type":"events"}
+2023-11-29 05:10:47.739 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:10:48.729 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:10:48.789 PM: info: Connection established to mariadb
+2023-11-29 05:10:48.793 PM: info: Server started on port 4000
+2023-11-29 05:10:50.458 PM: http: {}
+2023-11-29 05:16:06.744 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:16:07.689 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:16:07.765 PM: info: Connection established to mariadb
+2023-11-29 05:16:07.770 PM: info: Server started on port 4000
+2023-11-29 05:16:10.517 PM: error: ValidationError: "query.type" is required. "query.month" is required
+2023-11-29 05:16:37.932 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:16:38.861 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:16:38.921 PM: info: Connection established to mariadb
+2023-11-29 05:16:38.925 PM: info: Server started on port 4000
+2023-11-29 05:16:40.463 PM: error: ValidationError: "query.type" is required
+2023-11-29 05:17:06.837 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 05:17:07.681 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 05:17:07.744 PM: info: Connection established to mariadb
+2023-11-29 05:17:07.748 PM: info: Server started on port 4000
+2023-11-29 05:17:07.856 PM: error: ValidationError: "query.type" is required
+2023-11-29 05:17:10.140 PM: error: ValidationError: "query.type" is required
+2023-11-29 05:17:13.088 PM: error: ValidationError: "query.type" is required
+2023-11-29 05:17:13.849 PM: error: ValidationError: "query.type" is required
+2023-11-29 06:14:20.537 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 06:14:21.535 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 06:14:21.680 PM: info: Connection established to mariadb
+2023-11-29 06:14:21.686 PM: info: Server started on port 4000
+2023-11-29 06:14:25.523 PM: debug: Executing (default): SELECT `event_date`, `occasion` FROM `reservations` AS `reservation`;
+2023-11-29 06:14:25.592 PM: http: Sent reservations to ::ffff:192.168.1.40
+2023-11-29 06:18:44.011 PM: debug: Executing (default): SELECT `event_date`, `occasion` FROM `reservations` AS `reservation`;
+2023-11-29 06:18:44.144 PM: http: Sent reservations to ::ffff:192.168.1.40
+2023-11-29 07:13:57.876 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 07:13:59.143 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 07:13:59.280 PM: info: Connection established to mariadb
+2023-11-29 07:13:59.282 PM: debug: Starting DB sync
+2023-11-29 07:13:59.285 PM: debug: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Events' AND TABLE_SCHEMA = 'miguelsDB_dev'
+2023-11-29 07:13:59.361 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `Events` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(250) NOT NULL, `details` TEXT, `Date_Start` DATETIME NOT NULL, `Date_End` DATETIME, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2023-11-29 07:13:59.423 PM: debug: Executing (default): SHOW INDEX FROM `Events`
+2023-11-29 07:13:59.489 PM: info: 	Added table 'Events'
+2023-11-29 07:13:59.491 PM: debug: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'reservations' AND TABLE_SCHEMA = 'miguelsDB_dev'
+2023-11-29 07:13:59.563 PM: debug: Executing (default): SHOW FULL COLUMNS FROM `reservations`;
+2023-11-29 07:13:59.665 PM: debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'reservations' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='miguelsDB_dev' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2023-11-29 07:13:59.797 PM: debug: Executing (default): ALTER TABLE `reservations` ADD `start_date` DATETIME NOT NULL;
+2023-11-29 07:13:59.875 PM: debug: Executing (default): ALTER TABLE `reservations` ADD `end_date` DATETIME;
+2023-11-29 07:13:59.946 PM: debug: Executing (default): ALTER TABLE `reservations` CHANGE `first_name` `first_name` VARCHAR(50) NOT NULL;
+2023-11-29 07:14:00.019 PM: debug: Executing (default): ALTER TABLE `reservations` CHANGE `last_name` `last_name` VARCHAR(50) NOT NULL;
+2023-11-29 07:14:00.086 PM: debug: Executing (default): ALTER TABLE `reservations` CHANGE `phone_number` `phone_number` VARCHAR(15) NOT NULL;
+2023-11-29 07:14:00.150 PM: debug: Executing (default): ALTER TABLE `reservations` CHANGE `email` `email` VARCHAR(100);
+2023-11-29 07:14:00.209 PM: debug: Executing (default): ALTER TABLE `reservations` CHANGE `method_of_contact` `method_of_contact` VARCHAR(100) NOT NULL;
+2023-11-29 07:14:00.321 PM: debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE (REFERENCED_TABLE_NAME = 'reservations' AND REFERENCED_TABLE_SCHEMA = 'miguelsDB_dev' AND REFERENCED_COLUMN_NAME = 'event_date') OR (TABLE_NAME = 'reservations' AND TABLE_SCHEMA = 'miguelsDB_dev' AND COLUMN_NAME = 'event_date' AND REFERENCED_TABLE_NAME IS NOT NULL)
+2023-11-29 07:14:00.395 PM: error: 	An err has occured: 
+ Cannot delete property 'meta' of [object Array]
+2023-11-29 07:14:00.397 PM: debug: Sync Complete
+2023-11-29 07:14:00.402 PM: info: Server started on port 4000
+2023-11-29 07:15:31.488 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 07:15:32.172 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 07:15:32.237 PM: info: Connection established to mariadb
+2023-11-29 07:15:32.238 PM: debug: Starting DB sync
+2023-11-29 07:15:32.241 PM: debug: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Events' AND TABLE_SCHEMA = 'miguelsDB_dev'
+2023-11-29 07:15:32.310 PM: debug: Executing (default): SHOW FULL COLUMNS FROM `Events`;
+2023-11-29 07:15:32.373 PM: debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Events' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='miguelsDB_dev' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2023-11-29 07:15:33.000 PM: debug: Executing (default): ALTER TABLE `Events` ADD `date_start` DATETIME NOT NULL;
+2023-11-29 07:15:33.067 PM: error: 	An err has occured: 
+ (conn=4015, no: 1060, SQLState: 42S21) Duplicate column name 'date_start'
+sql: ALTER TABLE `Events` ADD `date_start` DATETIME NOT NULL; - parameters:[]
+2023-11-29 07:15:33.070 PM: debug: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'reservations' AND TABLE_SCHEMA = 'miguelsDB_dev'
+2023-11-29 07:15:33.131 PM: debug: Executing (default): SHOW FULL COLUMNS FROM `reservations`;
+2023-11-29 07:15:33.133 PM: debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'reservations' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='miguelsDB_dev' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2023-11-29 07:15:33.200 PM: debug: Executing (default): ALTER TABLE `reservations` CHANGE `first_name` `first_name` VARCHAR(50) NOT NULL;
+2023-11-29 07:15:33.269 PM: debug: Executing (default): ALTER TABLE `reservations` CHANGE `last_name` `last_name` VARCHAR(50) NOT NULL;
+2023-11-29 07:15:33.333 PM: debug: Executing (default): ALTER TABLE `reservations` CHANGE `phone_number` `phone_number` VARCHAR(15) NOT NULL;
+2023-11-29 07:15:33.399 PM: debug: Executing (default): ALTER TABLE `reservations` CHANGE `email` `email` VARCHAR(100);
+2023-11-29 07:15:33.463 PM: debug: Executing (default): ALTER TABLE `reservations` CHANGE `method_of_contact` `method_of_contact` VARCHAR(100) NOT NULL;
+2023-11-29 07:15:33.527 PM: debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE (REFERENCED_TABLE_NAME = 'reservations' AND REFERENCED_TABLE_SCHEMA = 'miguelsDB_dev' AND REFERENCED_COLUMN_NAME = 'event_date') OR (TABLE_NAME = 'reservations' AND TABLE_SCHEMA = 'miguelsDB_dev' AND COLUMN_NAME = 'event_date' AND REFERENCED_TABLE_NAME IS NOT NULL)
+2023-11-29 07:15:33.596 PM: error: 	An err has occured: 
+ Cannot delete property 'meta' of [object Array]
+2023-11-29 07:15:33.597 PM: debug: Sync Complete
+2023-11-29 07:15:33.601 PM: info: Server started on port 4000
+2023-11-29 07:17:18.213 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 07:17:19.574 PM: error: >Could not establish a connection: 
+2023-11-29 07:17:19.575 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1000ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-29 07:17:19.577 PM: debug: Starting DB sync
+2023-11-29 07:17:19.908 PM: debug: Executing (default): DROP TABLE IF EXISTS `events`;
+2023-11-29 07:17:19.977 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(250) NOT NULL, `details` TEXT, `date_start` DATETIME NOT NULL, `date_end` DATETIME, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2023-11-29 07:17:20.042 PM: debug: Executing (default): SHOW INDEX FROM `events`
+2023-11-29 07:17:20.109 PM: info: 	Added table 'events'
+2023-11-29 07:17:20.110 PM: debug: Executing (default): DROP TABLE IF EXISTS `reservations`;
+2023-11-29 07:17:20.182 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `reservations` (`reservation_id` CHAR(36) BINARY NOT NULL , `first_name` VARCHAR(50) NOT NULL, `last_name` VARCHAR(50) NOT NULL, `phone_number` VARCHAR(15) NOT NULL, `email` VARCHAR(100), `method_of_contact` VARCHAR(100) NOT NULL, `start_date` DATETIME NOT NULL, `end_date` DATETIME, `occasion` VARCHAR(255) NOT NULL, `other` TEXT, `services` VARCHAR(100) NOT NULL, `special_request` TEXT, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`reservation_id`)) ENGINE=InnoDB;
+2023-11-29 07:17:20.260 PM: debug: Executing (default): SHOW INDEX FROM `reservations`
+2023-11-29 07:17:20.328 PM: info: 	Added table 'reservations'
+2023-11-29 07:17:20.329 PM: debug: Sync Complete
+2023-11-29 07:17:20.333 PM: info: Server started on port 4000
+2023-11-29 07:17:33.790 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 07:17:34.462 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 07:17:34.530 PM: info: Connection established to mariadb
+2023-11-29 07:17:34.531 PM: debug: Starting DB sync
+2023-11-29 07:17:34.534 PM: debug: Executing (default): DROP TABLE IF EXISTS `events`;
+2023-11-29 07:17:34.605 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(250) NOT NULL, `details` TEXT, `date_start` DATETIME NOT NULL, `date_end` DATETIME, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2023-11-29 07:17:34.684 PM: debug: Executing (default): SHOW INDEX FROM `events`
+2023-11-29 07:17:34.751 PM: info: 	Added table 'events'
+2023-11-29 07:17:34.753 PM: debug: Executing (default): DROP TABLE IF EXISTS `reservations`;
+2023-11-29 07:17:34.829 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `reservations` (`reservation_id` CHAR(36) BINARY NOT NULL , `first_name` VARCHAR(50) NOT NULL, `last_name` VARCHAR(50) NOT NULL, `phone_number` VARCHAR(15) NOT NULL, `email` VARCHAR(100), `method_of_contact` VARCHAR(100) NOT NULL, `start_date` DATETIME NOT NULL, `end_date` DATETIME, `occasion` VARCHAR(255) NOT NULL, `other` TEXT, `services` VARCHAR(100) NOT NULL, `special_request` TEXT, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`reservation_id`)) ENGINE=InnoDB;
+2023-11-29 07:17:34.901 PM: debug: Executing (default): SHOW INDEX FROM `reservations`
+2023-11-29 07:17:34.969 PM: info: 	Added table 'reservations'
+2023-11-29 07:17:34.970 PM: debug: Sync Complete
+2023-11-29 07:17:34.975 PM: info: Server started on port 4000
+2023-11-29 07:20:05.678 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 07:20:06.443 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 07:20:06.502 PM: info: Connection established to mariadb
+2023-11-29 07:20:06.504 PM: debug: Starting DB sync
+2023-11-29 07:20:06.507 PM: debug: Executing (default): DROP TABLE IF EXISTS `events`;
+2023-11-29 07:20:06.569 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(250) NOT NULL, `details` TEXT, `date_start` DATETIME NOT NULL, `date_end` DATETIME, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2023-11-29 07:20:06.852 PM: debug: Executing (default): SHOW INDEX FROM `events`
+2023-11-29 07:20:06.912 PM: info: 	Added table 'events'
+2023-11-29 07:20:06.914 PM: debug: Executing (default): DROP TABLE IF EXISTS `reservations`;
+2023-11-29 07:20:06.975 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `reservations` (`reservation_id` CHAR(36) BINARY NOT NULL , `first_name` VARCHAR(50) NOT NULL, `last_name` VARCHAR(50) NOT NULL, `phone_number` VARCHAR(15) NOT NULL, `email` VARCHAR(100), `method_of_contact` VARCHAR(100) NOT NULL, `start_date` DATETIME NOT NULL, `end_date` DATETIME, `occasion` VARCHAR(255) NOT NULL, `other` TEXT, `services` VARCHAR(100) NOT NULL, `special_request` TEXT, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`reservation_id`)) ENGINE=InnoDB;
+2023-11-29 07:20:07.052 PM: debug: Executing (default): SHOW INDEX FROM `reservations`
+2023-11-29 07:20:07.512 PM: info: 	Added table 'reservations'
+2023-11-29 07:20:07.513 PM: debug: Sync Complete
+2023-11-29 07:20:07.517 PM: info: Server started on port 4000
+2023-11-29 07:35:52.661 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 07:35:53.607 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 07:35:53.668 PM: info: Connection established to mariadb
+2023-11-29 07:35:53.669 PM: debug: Starting DB sync
+2023-11-29 07:35:53.672 PM: debug: Executing (default): DROP TABLE IF EXISTS `events`;
+2023-11-29 07:35:53.768 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(250) NOT NULL, `details` TEXT, `date_start` DATETIME NOT NULL, `date_end` DATETIME, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2023-11-29 07:35:53.898 PM: debug: Executing (default): SHOW INDEX FROM `events`
+2023-11-29 07:35:53.965 PM: info: 	Added table 'events'
+2023-11-29 07:35:53.967 PM: debug: Executing (default): DROP TABLE IF EXISTS `reservations`;
+2023-11-29 07:35:54.026 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `reservations` (`reservation_id` CHAR(36) BINARY NOT NULL , `occasion` VARCHAR(255) NOT NULL, `first_name` VARCHAR(50) NOT NULL, `last_name` VARCHAR(50) NOT NULL, `phone_number` VARCHAR(15) NOT NULL, `email` VARCHAR(100), `method_of_contact` VARCHAR(100) NOT NULL, `date_start` DATETIME NOT NULL, `date_end` DATETIME, `additional_information` TEXT, `services` VARCHAR(100), `special_request` TEXT, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`reservation_id`)) ENGINE=InnoDB;
+2023-11-29 07:35:54.086 PM: debug: Executing (default): SHOW INDEX FROM `reservations`
+2023-11-29 07:35:54.145 PM: info: 	Added table 'reservations'
+2023-11-29 07:35:54.147 PM: debug: Executing (default): DROP TABLE IF EXISTS `reviews`;
+2023-11-29 07:35:54.292 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `reviews` (`reviewID` INTEGER UNSIGNED NOT NULL auto_increment , `rating` INTEGER NOT NULL, `details` TEXT, `first_name` VARCHAR(100), `last_name` VARCHAR(100), `phone` VARCHAR(15), `email` VARCHAR(255), PRIMARY KEY (`reviewID`)) ENGINE=InnoDB;
+2023-11-29 07:35:54.427 PM: debug: Executing (default): SHOW INDEX FROM `reviews`
+2023-11-29 07:35:54.503 PM: info: 	Added table 'reviews'
+2023-11-29 07:35:54.504 PM: debug: Sync Complete
+2023-11-29 07:35:54.509 PM: info: Server started on port 4000
+2023-11-29 07:39:40.950 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 07:39:41.976 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 07:39:42.035 PM: info: Connection established to mariadb
+2023-11-29 07:39:42.037 PM: warn: Executing destructive table queries
+2023-11-29 07:39:42.037 PM: debug: Starting DB sync
+2023-11-29 07:39:42.040 PM: debug: Executing (default): DROP TABLE IF EXISTS `events`;
+2023-11-29 07:39:42.219 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `events` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(250) NOT NULL, `details` TEXT, `date_start` DATETIME NOT NULL, `date_end` DATETIME, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2023-11-29 07:39:42.679 PM: debug: Executing (default): SHOW INDEX FROM `events`
+2023-11-29 07:39:42.740 PM: info: 	Added table 'events'
+2023-11-29 07:39:42.742 PM: debug: Executing (default): DROP TABLE IF EXISTS `reservations`;
+2023-11-29 07:39:43.079 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `reservations` (`reservation_id` CHAR(36) BINARY NOT NULL , `occasion` VARCHAR(255) NOT NULL, `first_name` VARCHAR(50) NOT NULL, `last_name` VARCHAR(50) NOT NULL, `phone_number` VARCHAR(15) NOT NULL, `email` VARCHAR(100), `method_of_contact` VARCHAR(100) NOT NULL, `date_start` DATETIME NOT NULL, `date_end` DATETIME, `additional_information` TEXT, `services` VARCHAR(100), `special_request` TEXT, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`reservation_id`)) ENGINE=InnoDB;
+2023-11-29 07:39:43.139 PM: debug: Executing (default): SHOW INDEX FROM `reservations`
+2023-11-29 07:39:43.199 PM: info: 	Added table 'reservations'
+2023-11-29 07:39:43.201 PM: debug: Executing (default): DROP TABLE IF EXISTS `reviews`;
+2023-11-29 07:39:43.261 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `reviews` (`reviewID` INTEGER UNSIGNED NOT NULL auto_increment , `rating` INTEGER NOT NULL, `details` TEXT, `first_name` VARCHAR(100), `last_name` VARCHAR(100), `phone` VARCHAR(15), `email` VARCHAR(255), PRIMARY KEY (`reviewID`)) ENGINE=InnoDB;
+2023-11-29 07:39:43.408 PM: debug: Executing (default): SHOW INDEX FROM `reviews`
+2023-11-29 07:39:43.534 PM: info: 	Added table 'reviews'
+2023-11-29 07:39:43.535 PM: debug: Sync Complete
+2023-11-29 07:39:43.538 PM: info: Server started on port 4000
+2023-11-29 09:06:39.080 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 09:06:40.077 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 09:06:40.138 PM: info: Connection established to mariadb
+2023-11-29 09:06:40.143 PM: info: Server started on port 4000
+2023-11-29 09:06:44.283 PM: debug: Executing (default): SELECT `event_date`, `occasion` FROM `reservations` AS `reservation`;
+2023-11-29 09:06:44.753 PM: error: Error
+    at Query.run (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/query.js:53:25)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async reservation.findAll (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/model.js:1140:21)
+    at async reservation.getAllReservations (file:///Users/polo/Dev/Projects/Miguels/models/reservationModel.js:14:20)
+    at async file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:35:30
+2023-11-29 09:07:36.131 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 09:07:37.047 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 09:07:37.112 PM: info: Connection established to mariadb
+2023-11-29 09:07:37.117 PM: info: Server started on port 4000
+2023-11-29 09:07:48.023 PM: error: ReferenceError: pass is not defined
+    at file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:28:9
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:284:15
+2023-11-29 09:07:58.904 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 09:07:59.788 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 09:07:59.847 PM: info: Connection established to mariadb
+2023-11-29 09:07:59.852 PM: info: Server started on port 4000
+2023-11-29 09:08:10.065 PM: debug: Executing (default): SELECT `event_date`, `occasion` FROM `reservations` AS `reservation`;
+2023-11-29 09:08:16.134 PM: error: Error
+    at Query.run (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/query.js:53:25)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async reservation.findAll (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/model.js:1140:21)
+    at async reservation.getAllReservations (file:///Users/polo/Dev/Projects/Miguels/models/reservationModel.js:14:20)
+    at async file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:36:30
+2023-11-29 09:09:43.945 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 09:09:45.016 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 09:09:45.075 PM: info: Connection established to mariadb
+2023-11-29 09:09:45.080 PM: info: Server started on port 4000
+2023-11-29 09:09:48.081 PM: debug: Executing (default): SELECT `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation`;
+2023-11-29 09:09:48.165 PM: http: Sent Calender information to 192.168.1.41
+2023-11-29 09:11:00.914 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 09:11:01.935 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 09:11:01.996 PM: info: Connection established to mariadb
+2023-11-29 09:11:02.001 PM: info: Server started on port 4000
+2023-11-29 09:11:25.707 PM: debug: Executing (default): SELECT `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation`;
+2023-11-29 09:11:25.772 PM: http: Sent Calender information to 192.168.1.41
+2023-11-29 09:12:27.382 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-29 09:12:28.130 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-29 09:12:28.206 PM: info: Connection established to mariadb
+2023-11-29 09:12:28.211 PM: info: Server started on port 4000
+2023-11-30 02:13:12.970 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:13:13.618 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:13:13.682 PM: info: Connection established to mariadb
+2023-11-30 02:13:13.687 PM: info: Server started on port 4000
+2023-11-30 02:14:36.937 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:14:37.554 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:14:37.638 PM: info: Connection established to mariadb
+2023-11-30 02:14:37.643 PM: info: Server started on port 4000
+2023-11-30 02:16:48.831 PM: error: TypeError: fn is not a function
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:346:12)
+2023-11-30 02:18:14.403 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:18:15.064 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:18:15.122 PM: info: Connection established to mariadb
+2023-11-30 02:18:15.127 PM: info: Server started on port 4000
+2023-11-30 02:18:27.819 PM: error: TypeError: Event.findAll is not a function
+    at events.getAllEvents (file:///Users/polo/Dev/Projects/Miguels/models/eventModel.js:10:32)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:88:33)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+2023-11-30 02:20:02.563 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:20:03.668 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:20:03.753 PM: info: Connection established to mariadb
+2023-11-30 02:20:03.757 PM: info: Server started on port 4000
+2023-11-30 02:20:26.191 PM: error: TypeError: Event.findAll is not a function
+    at events.findAllEvents (file:///Users/polo/Dev/Projects/Miguels/models/eventModel.js:10:32)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:88:33)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+2023-11-30 02:21:41.129 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:21:41.730 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:21:41.790 PM: info: Connection established to mariadb
+2023-11-30 02:21:41.795 PM: info: Server started on port 4000
+2023-11-30 02:22:13.453 PM: error: TypeError: data is not iterable
+    at send (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:109:19)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:92:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-30 02:22:28.854 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:22:29.588 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:22:29.818 PM: info: Connection established to mariadb
+2023-11-30 02:22:29.822 PM: info: Server started on port 4000
+2023-11-30 02:22:38.035 PM: error: TypeError: data is not iterable
+    at send (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:109:19)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:92:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-30 02:23:04.388 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:23:05.024 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:23:05.085 PM: info: Connection established to mariadb
+2023-11-30 02:23:05.089 PM: info: Server started on port 4000
+2023-11-30 02:23:18.189 PM: error: TypeError: data is not iterable
+    at send (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:109:19)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:92:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-30 02:23:35.734 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:23:36.375 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:23:36.435 PM: info: Connection established to mariadb
+2023-11-30 02:23:36.440 PM: info: Server started on port 4000
+2023-11-30 02:23:41.337 PM: error: TypeError: res.JSON is not a function
+    at send (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:107:9)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:92:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-30 02:24:04.693 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:24:05.290 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:24:05.348 PM: info: Connection established to mariadb
+2023-11-30 02:24:05.352 PM: info: Server started on port 4000
+2023-11-30 02:24:12.922 PM: error: ReferenceError: req is not defined
+    at send (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:113:53)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:92:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-30 02:27:10.834 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:27:11.480 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:27:11.540 PM: info: Connection established to mariadb
+2023-11-30 02:27:11.545 PM: info: Server started on port 4000
+2023-11-30 02:27:48.383 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 02:27:48.991 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 02:27:49.051 PM: info: Connection established to mariadb
+2023-11-30 02:27:49.055 PM: info: Server started on port 4000
+2023-11-30 02:27:53.778 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 02:27:58.118 PM: error: ReferenceError: req is not defined
+    at send (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:113:53)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:92:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-30 06:22:06.801 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 06:22:07.631 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 06:22:07.706 PM: info: Connection established to mariadb
+2023-11-30 06:22:07.712 PM: info: Server started on port 4000
+2023-11-30 06:22:17.075 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:22:24.396 PM: error: ReferenceError: req is not defined
+    at send (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:113:53)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:92:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-30 06:22:42.070 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:23:31.134 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 06:23:31.865 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 06:23:31.935 PM: info: Connection established to mariadb
+2023-11-30 06:23:31.940 PM: info: Server started on port 4000
+2023-11-30 06:23:35.905 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:23:41.175 PM: error: ReferenceError: req is not defined
+    at send (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:107:22)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:92:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-11-30 06:24:07.025 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 06:24:08.798 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 06:24:08.952 PM: info: Connection established to mariadb
+2023-11-30 06:24:08.956 PM: info: Server started on port 4000
+2023-11-30 06:24:12.150 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:24:12.625 PM: http: Sent Calender information to undefined
+2023-11-30 06:24:41.504 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:24:41.816 PM: http: Sent Calender information to undefined
+2023-11-30 06:24:46.344 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 06:24:47.442 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 06:24:47.574 PM: info: Connection established to mariadb
+2023-11-30 06:24:47.578 PM: info: Server started on port 4000
+2023-11-30 06:24:50.835 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:24:51.256 PM: http: Sent Calender information to undefined
+2023-11-30 06:25:04.795 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 06:25:05.926 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 06:25:06.001 PM: info: Connection established to mariadb
+2023-11-30 06:25:06.006 PM: info: Server started on port 4000
+2023-11-30 06:25:10.663 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:25:10.821 PM: http: Sent Calender information to localhost
+2023-11-30 06:31:12.847 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:31:13.004 PM: http: Sent Calender information to localhost
+2023-11-30 06:33:18.172 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 06:33:18.520 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:33:18.668 PM: http: Sent Calender information to localhost
+2023-11-30 06:33:28.539 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:33:28.645 PM: http: Sent Calender information to localhost
+2023-11-30 06:33:32.525 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 06:33:32.530 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:33:32.633 PM: http: Sent Calender information to localhost
+2023-11-30 06:33:47.281 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 06:33:58.349 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 06:33:58.453 PM: http: Sent Calender information to localhost
+2023-11-30 06:36:55.988 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 06:36:56.710 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 06:36:56.782 PM: info: Connection established to mariadb
+2023-11-30 06:36:56.787 PM: info: Server started on port 4000
+2023-11-30 06:37:07.165 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:46:18.312 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:46:19.741 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 07:46:19.845 PM: info: Connection established to mariadb
+2023-11-30 07:46:19.851 PM: info: Server started on port 4000
+2023-11-30 07:46:26.359 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:47:23.713 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 07:47:34.572 PM: http: Sent Calender information to localhost
+2023-11-30 07:47:42.813 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:47:44.499 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 07:47:44.601 PM: info: Connection established to mariadb
+2023-11-30 07:47:44.606 PM: info: Server started on port 4000
+2023-11-30 07:47:56.923 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:47:57.933 PM: error: >Could not establish a connection: 
+2023-11-30 07:47:57.935 PM: error: SequelizeConnectionError: (conn=5451, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:32:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 07:47:57.939 PM: info: Server started on port 4000
+2023-11-30 07:48:02.894 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:48:04.770 PM: error: >Could not establish a connection: 
+2023-11-30 07:48:04.771 PM: error: SequelizeConnectionError: (conn=5453, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 07:48:04.775 PM: info: Server started on port 4000
+2023-11-30 07:48:15.866 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:48:17.591 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 07:48:17.700 PM: info: Connection established to mariadb
+2023-11-30 07:48:17.705 PM: info: Server started on port 4000
+2023-11-30 07:48:22.763 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:49:14.396 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 07:49:39.640 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:49:40.681 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 07:49:41.095 PM: info: Connection established to mariadb
+2023-11-30 07:49:41.099 PM: info: Server started on port 4000
+2023-11-30 07:49:47.638 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:49:49.892 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-30 06:00:00.000' AND '2023-11-30 06:00:00.000' AND `events`.`date_end` = '2023-11-30 06:00:00.000';
+2023-11-30 07:49:55.869 PM: http: Sent Calender information to localhost
+2023-11-30 07:50:11.168 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:50:18.393 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-30 06:00:00.000' AND '2023-11-30 06:00:00.000' AND `events`.`date_end` = '2023-11-30 06:00:00.000';
+2023-11-30 07:52:06.169 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:52:07.696 PM: error: >Could not establish a connection: 
+2023-11-30 07:52:07.697 PM: error: SequelizeConnectionError: (conn=5464, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 07:52:07.702 PM: info: Server started on port 4000
+2023-11-30 07:52:12.338 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:52:13.399 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 07:52:13.502 PM: info: Connection established to mariadb
+2023-11-30 07:52:13.506 PM: info: Server started on port 4000
+2023-11-30 07:52:38.465 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:54:34.270 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:54:36.095 PM: error: >Could not establish a connection: 
+2023-11-30 07:54:36.096 PM: error: SequelizeConnectionError: (conn=5468, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1000ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 07:54:36.101 PM: info: Server started on port 4000
+2023-11-30 07:54:38.264 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:55:27.592 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:55:28.600 PM: error: >Could not establish a connection: 
+2023-11-30 07:55:28.601 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:32:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 07:55:28.606 PM: info: Server started on port 4000
+2023-11-30 07:55:30.931 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:56:55.327 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:56:56.780 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 07:56:57.218 PM: info: Connection established to mariadb
+2023-11-30 07:56:57.222 PM: info: Server started on port 4000
+2023-11-30 07:56:59.322 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:56:59.349 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 07:56:59.350 PM: debug: End: 2023-12-01T00:00:00.000-06:00
+2023-11-30 07:57:17.823 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-30 06:00:00.000' AND '2023-11-30 06:00:00.000' AND `events`.`date_end` = '2023-11-30 06:00:00.000';
+2023-11-30 07:59:06.094 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:59:07.638 PM: error: >Could not establish a connection: 
+2023-11-30 07:59:07.639 PM: error: SequelizeConnectionError: (conn=5472, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1000ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 07:59:07.645 PM: info: Server started on port 4000
+2023-11-30 07:59:10.313 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:59:10.343 PM: debug: Start: undefined
+2023-11-30 07:59:10.346 PM: error: TypeError: sequelizeQuery.date_end.toIso is not a function
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:82:61)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:284:15
+2023-11-30 07:59:23.913 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:59:25.304 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 07:59:25.413 PM: info: Connection established to mariadb
+2023-11-30 07:59:25.418 PM: info: Server started on port 4000
+2023-11-30 07:59:27.342 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:59:27.373 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 07:59:27.376 PM: error: TypeError: sequelizeQuery.date_end.toIso is not a function
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:82:61)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:284:15
+2023-11-30 07:59:29.082 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 07:59:29.085 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 07:59:29.088 PM: error: TypeError: sequelizeQuery.date_end.toIso is not a function
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:82:61)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:284:15
+2023-11-30 07:59:54.595 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 07:59:55.630 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 07:59:55.734 PM: info: Connection established to mariadb
+2023-11-30 07:59:55.739 PM: info: Server started on port 4000
+2023-11-30 08:00:02.659 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:00:02.688 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 08:00:02.689 PM: debug: End: 2023-12-01T00:00:00.000-06:00
+2023-11-30 08:00:07.899 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000' AND `events`.`date_end` = '2023-11-30 06:00:00.000';
+2023-11-30 08:00:20.328 PM: http: Sent Calender information to localhost
+2023-11-30 08:01:10.700 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:01:12.576 PM: error: >Could not establish a connection: 
+2023-11-30 08:01:12.578 PM: error: SequelizeConnectionError: (conn=5478, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:01:12.583 PM: info: Server started on port 4000
+2023-11-30 08:01:14.609 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:01:14.639 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 08:01:14.641 PM: debug: End: 2023-12-01T00:00:00.000-06:00
+2023-11-30 08:01:30.343 PM: error: SequelizeConnectionError: (conn=5479, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:05:53.865 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:05:54.877 PM: error: >Could not establish a connection: 
+2023-11-30 08:05:54.879 PM: error: SequelizeConnectionError: (conn=5480, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:32:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 08:05:54.884 PM: info: Server started on port 4000
+2023-11-30 08:05:57.603 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:05:57.633 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 08:05:57.635 PM: debug: End: 2023-12-01T00:00:00.000-06:00
+2023-11-30 08:06:03.648 PM: error: SequelizeConnectionError: (conn=5481, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async MySQLQueryInterface.select (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async events.findAll (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/model.js:1140:21)
+    at async events.findAllEvents (file:///Users/polo/Dev/Projects/Miguels/models/eventModel.js:12:16)
+    at async getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:100:20)
+2023-11-30 08:06:12.727 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:06:13.741 PM: error: >Could not establish a connection: 
+2023-11-30 08:06:13.742 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:32:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 08:06:13.747 PM: info: Server started on port 4000
+2023-11-30 08:06:16.622 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:06:16.652 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 08:06:16.653 PM: debug: End: 2023-12-01T00:00:00.000-06:00
+2023-11-30 08:06:53.163 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:06:54.982 PM: error: >Could not establish a connection: 
+2023-11-30 08:06:54.984 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:06:54.989 PM: info: Server started on port 4000
+2023-11-30 08:07:02.962 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:07:03.980 PM: error: >Could not establish a connection: 
+2023-11-30 08:07:03.982 PM: error: SequelizeConnectionError: (conn=5497, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:32:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 08:07:03.987 PM: info: Server started on port 4000
+2023-11-30 08:09:04.999 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:09:06.385 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:09:06.490 PM: info: Connection established to mariadb
+2023-11-30 08:09:06.496 PM: info: Server started on port 4000
+2023-11-30 08:09:27.567 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:09:27.645 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 08:09:27.647 PM: debug: End: 2023-12-01T00:00:00.000-06:00
+2023-11-30 08:09:30.868 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000';
+2023-11-30 08:09:37.380 PM: http: Sent Calender information to localhost
+2023-11-30 08:09:57.769 PM: debug: Calendar Events Query: {"month":10}
+2023-11-30 08:09:57.772 PM: debug: Start: 2023-10-01T00:00:00.000-05:00
+2023-11-30 08:09:57.774 PM: debug: End: 2023-11-01T00:00:00.000-05:00
+2023-11-30 08:09:59.152 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-10-01 05:00:00.000' AND '2023-11-01 05:00:00.000';
+2023-11-30 08:09:59.508 PM: http: Sent Calender information to localhost
+2023-11-30 08:10:07.068 PM: debug: Calendar Events Query: {"month":9}
+2023-11-30 08:10:07.071 PM: debug: Start: null
+2023-11-30 08:10:07.072 PM: debug: End: null
+2023-11-30 08:10:07.076 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN NULL AND NULL;
+2023-11-30 08:10:07.189 PM: http: Sent Calender information to localhost
+2023-11-30 08:10:09.803 PM: debug: Calendar Events Query: {"month":10}
+2023-11-30 08:10:09.806 PM: debug: Start: 2023-10-01T00:00:00.000-05:00
+2023-11-30 08:10:09.807 PM: debug: End: 2023-11-01T00:00:00.000-05:00
+2023-11-30 08:10:09.811 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-10-01 05:00:00.000' AND '2023-11-01 05:00:00.000';
+2023-11-30 08:10:09.933 PM: http: Sent Calender information to localhost
+2023-11-30 08:10:12.276 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:10:12.280 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 08:10:12.281 PM: debug: End: 2023-12-01T00:00:00.000-06:00
+2023-11-30 08:10:12.285 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000';
+2023-11-30 08:10:12.397 PM: http: Sent Calender information to localhost
+2023-11-30 08:12:37.913 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:12:39.308 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:12:39.411 PM: info: Connection established to mariadb
+2023-11-30 08:12:39.416 PM: info: Server started on port 4000
+2023-11-30 08:12:42.120 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:12:42.150 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 08:12:42.151 PM: debug: End: 2023-12-01T00:00:00.000-06:00
+2023-11-30 08:12:47.389 PM: error: TypeError: Cannot convert undefined or null to object
+    at Function.assign (<anonymous>)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:89:20)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+2023-11-30 08:13:01.634 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:13:02.706 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:13:03.151 PM: info: Connection established to mariadb
+2023-11-30 08:13:03.155 PM: info: Server started on port 4000
+2023-11-30 08:13:03.253 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:13:03.283 PM: debug: Start: 2023-11-01T00:00:00.000-05:00
+2023-11-30 08:13:03.284 PM: debug: End: 2023-12-01T00:00:00.000-06:00
+2023-11-30 08:13:08.228 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-30 06:00:00.000' AND '2023-11-30 06:00:00.000';
+2023-11-30 08:13:08.752 PM: http: Sent Calender information to localhost
+2023-11-30 08:29:13.578 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:29:15.517 PM: error: >Could not establish a connection: 
+2023-11-30 08:29:15.519 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:29:15.524 PM: info: Server started on port 4000
+2023-11-30 08:29:19.622 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:29:21.226 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:29:21.329 PM: info: Connection established to mariadb
+2023-11-30 08:29:21.334 PM: info: Server started on port 4000
+2023-11-30 08:29:34.347 PM: error: ReferenceError: logger is not defined
+    at RequestUtils.convertToSequelize (file:///Users/polo/Dev/Projects/Miguels/utils/requestUtils.js:10:13)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:48:35)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+2023-11-30 08:30:13.337 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:30:14.793 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:30:14.895 PM: info: Connection established to mariadb
+2023-11-30 08:30:14.902 PM: info: Server started on port 4000
+2023-11-30 08:30:19.409 PM: error: ReferenceError: req is not defined
+    at RequestUtils.convertToSequelize (file:///Users/polo/Dev/Projects/Miguels/utils/requestUtils.js:13:67)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:48:35)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+2023-11-30 08:31:10.737 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:31:11.748 PM: error: >Could not establish a connection: 
+2023-11-30 08:31:11.749 PM: error: SequelizeConnectionError: (conn=5563, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1000ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:36:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 08:31:11.754 PM: info: Server started on port 4000
+2023-11-30 08:31:30.351 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:31:32.144 PM: error: >Could not establish a connection: 
+2023-11-30 08:31:32.146 PM: error: SequelizeConnectionError: (conn=5565, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:31:32.151 PM: info: Server started on port 4000
+2023-11-30 08:31:37.216 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:31:37.221 PM: error: ReferenceError: extracted_queries is not defined
+    at file:///Users/polo/Dev/Projects/Miguels/utils/requestUtils.js:20:25
+    at Array.forEach (<anonymous>)
+    at RequestUtils.convertToSequelize (file:///Users/polo/Dev/Projects/Miguels/utils/requestUtils.js:16:27)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:48:35)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+2023-11-30 08:33:22.715 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:33:24.550 PM: error: >Could not establish a connection: 
+2023-11-30 08:33:24.552 PM: error: SequelizeConnectionError: (conn=5567, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:33:24.557 PM: info: Server started on port 4000
+2023-11-30 08:37:24.388 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:37:26.177 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:37:26.343 PM: info: Connection established to mariadb
+2023-11-30 08:37:26.347 PM: info: Server started on port 4000
+2023-11-30 08:37:32.182 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:37:32.275 PM: error: ReferenceError: Op is not defined
+    at RequestUtils.convertToSequelize (file:///Users/polo/Dev/Projects/Miguels/utils/requestUtils.js:48:22)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:48:43)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+2023-11-30 08:37:47.022 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:37:48.665 PM: error: >Could not establish a connection: 
+2023-11-30 08:37:48.666 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:37:48.671 PM: info: Server started on port 4000
+2023-11-30 08:37:54.416 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:37:54.462 PM: error: TypeError: Cannot read properties of undefined (reading 'toISO')
+    at RequestUtils.convertToSequelize (file:///Users/polo/Dev/Projects/Miguels/utils/requestUtils.js:49:58)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:47:43)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+2023-11-30 08:38:39.375 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:38:41.097 PM: error: >Could not establish a connection: 
+2023-11-30 08:38:41.099 PM: error: SequelizeConnectionError: (conn=5574, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:38:41.104 PM: info: Server started on port 4000
+2023-11-30 08:38:56.178 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:38:57.813 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:38:57.918 PM: info: Connection established to mariadb
+2023-11-30 08:38:57.923 PM: info: Server started on port 4000
+2023-11-30 08:39:01.383 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:39:01.416 PM: error: TypeError: Cannot read properties of undefined (reading 'toISO')
+    at RequestUtils.convertToSequelize (file:///Users/polo/Dev/Projects/Miguels/utils/requestUtils.js:49:58)
+    at getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:47:43)
+    at file:///Users/polo/Dev/Projects/Miguels/utils/catchAsync.js:10:18
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at file:///Users/polo/Dev/Projects/Miguels/middlewares/validate.js:30:9
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+2023-11-30 08:39:43.617 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:39:45.178 PM: error: >Could not establish a connection: 
+2023-11-30 08:39:45.180 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:39:45.185 PM: info: Server started on port 4000
+2023-11-30 08:39:49.133 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:39:49.719 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000';
+2023-11-30 08:39:49.838 PM: http: Sent Calender information to localhost
+2023-11-30 08:41:38.665 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:41:39.679 PM: error: >Could not establish a connection: 
+2023-11-30 08:41:39.680 PM: error: SequelizeConnectionError: (conn=5579, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:36:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 08:41:39.685 PM: info: Server started on port 4000
+2023-11-30 08:41:46.044 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:41:49.833 PM: error: SequelizeConnectionError: (conn=5580, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async MySQLQueryInterface.select (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async events.findAll (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/model.js:1140:21)
+    at async events.findAllEvents (file:///Users/polo/Dev/Projects/Miguels/models/eventModel.js:12:16)
+    at async getCalendarEvents (file:///Users/polo/Dev/Projects/Miguels/controllers/publicInfoController.js:52:24)
+2023-11-30 08:42:05.204 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:42:06.234 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000';
+2023-11-30 08:42:06.348 PM: http: Sent Calender information to localhost
+2023-11-30 08:42:16.561 PM: debug: Calendar Events Query: {"month":12}
+2023-11-30 08:42:17.071 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-12-01 06:00:00.000' AND '2024-01-01 06:00:00.000';
+2023-11-30 08:42:18.879 PM: http: Sent Calender information to localhost
+2023-11-30 08:42:22.974 PM: debug: Calendar Events Query: {"month":10}
+2023-11-30 08:42:22.980 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-10-01 05:00:00.000' AND '2023-11-01 05:00:00.000';
+2023-11-30 08:42:23.101 PM: http: Sent Calender information to localhost
+2023-11-30 08:42:25.631 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:42:25.637 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000';
+2023-11-30 08:42:25.750 PM: http: Sent Calender information to localhost
+2023-11-30 08:42:28.035 PM: debug: Calendar Events Query: {"month":12}
+2023-11-30 08:42:28.042 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-12-01 06:00:00.000' AND '2024-01-01 06:00:00.000';
+2023-11-30 08:42:28.292 PM: http: Sent Calender information to localhost
+2023-11-30 08:42:31.732 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:42:31.738 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000';
+2023-11-30 08:42:31.891 PM: http: Sent Calender information to localhost
+2023-11-30 08:42:41.823 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:42:41.827 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 08:42:42.189 PM: http: Sent Calender information to localhost
+2023-11-30 08:43:39.118 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:44:12.428 PM: error: SequelizeConnectionError: (conn=5584, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:44:53.518 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:44:54.334 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 08:44:54.741 PM: http: Sent Calender information to localhost
+2023-11-30 08:45:31.009 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:45:47.866 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:45:49.253 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:45:49.774 PM: info: Connection established to mariadb
+2023-11-30 08:45:49.779 PM: info: Server started on port 4000
+2023-11-30 08:46:00.125 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:46:00.134 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 08:46:00.493 PM: http: Sent Calender information to localhost
+2023-11-30 08:46:11.592 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:46:40.761 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:46:41.771 PM: error: >Could not establish a connection: 
+2023-11-30 08:46:41.773 PM: error: SequelizeConnectionError: (conn=5588, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:36:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 08:46:41.778 PM: info: Server started on port 4000
+2023-11-30 08:46:43.817 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:47:21.328 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:47:22.875 PM: error: >Could not establish a connection: 
+2023-11-30 08:47:22.877 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:47:22.882 PM: info: Server started on port 4000
+2023-11-30 08:47:24.335 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:47:57.524 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:47:58.552 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:47:59.297 PM: info: Connection established to mariadb
+2023-11-30 08:47:59.301 PM: info: Server started on port 4000
+2023-11-30 08:48:06.514 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:48:34.538 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:48:35.591 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:48:35.694 PM: info: Connection established to mariadb
+2023-11-30 08:48:35.700 PM: info: Server started on port 4000
+2023-11-30 08:48:43.468 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:49:09.851 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:49:10.880 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:49:10.984 PM: info: Connection established to mariadb
+2023-11-30 08:49:10.989 PM: info: Server started on port 4000
+2023-11-30 08:49:14.770 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:49:14.778 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 08:49:15.118 PM: http: Sent Calender information to localhost
+2023-11-30 08:49:29.542 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:49:31.053 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:49:31.157 PM: info: Connection established to mariadb
+2023-11-30 08:49:31.162 PM: info: Server started on port 4000
+2023-11-30 08:49:34.848 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:50:40.841 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:50:41.949 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:50:42.051 PM: info: Connection established to mariadb
+2023-11-30 08:50:42.056 PM: info: Server started on port 4000
+2023-11-30 08:50:44.659 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:50:44.671 PM: error: Error: WHERE parameter "id" has invalid "undefined" value
+    at MariaDBQueryGenerator.whereItemQuery (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at MariaDBQueryGenerator.getWhereConditions (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at MariaDBQueryGenerator.selectQuery (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at MySQLQueryInterface.select (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at events.findAll (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async events.findAllEvents (file:///Users/polo/Dev/Projects/Miguels/models/eventModel.js:12:16)
+2023-11-30 08:50:46.115 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:50:46.120 PM: error: Error: WHERE parameter "id" has invalid "undefined" value
+    at MariaDBQueryGenerator.whereItemQuery (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1743:13)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MariaDBQueryGenerator.whereItemsQuery (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1732:35)
+    at MariaDBQueryGenerator.getWhereConditions (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2075:19)
+    at MariaDBQueryGenerator.selectQuery (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-generator.js:988:28)
+    at MySQLQueryInterface.select (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at events.findAll (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async events.findAllEvents (file:///Users/polo/Dev/Projects/Miguels/models/eventModel.js:12:16)
+2023-11-30 08:51:30.702 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:51:32.237 PM: error: >Could not establish a connection: 
+2023-11-30 08:51:32.238 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:51:32.243 PM: info: Server started on port 4000
+2023-11-30 08:51:33.719 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:52:05.870 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:52:07.080 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:52:07.300 PM: info: Connection established to mariadb
+2023-11-30 08:52:07.305 PM: info: Server started on port 4000
+2023-11-30 08:52:11.277 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:52:18.537 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:52:19.979 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:52:20.082 PM: info: Connection established to mariadb
+2023-11-30 08:52:20.087 PM: info: Server started on port 4000
+2023-11-30 08:52:22.236 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:52:27.684 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`id` = 2;
+2023-11-30 08:52:27.693 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:52:30.216 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`id` = 2;
+2023-11-30 08:52:30.627 PM: http: Sent Calender information to localhost
+2023-11-30 08:53:21.813 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:53:27.129 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:53:37.286 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:53:38.694 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:53:38.804 PM: info: Connection established to mariadb
+2023-11-30 08:53:38.809 PM: info: Server started on port 4000
+2023-11-30 08:53:41.118 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-11-30 08:53:41.812 PM: http: Sent Calender information to localhost
+2023-11-30 08:53:51.232 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:53:51.239 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`id` = 2;
+2023-11-30 08:53:51.346 PM: http: Sent Calender information to localhost
+2023-11-30 08:54:02.904 PM: debug: Calendar Events Query: {"id":2,"month":11}
+2023-11-30 08:54:03.948 PM: error: SequelizeConnectionError: (conn=5609, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:54:06.141 PM: debug: Calendar Events Query: {"id":2,"month":11}
+2023-11-30 08:54:06.676 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000' AND `events`.`id` = 2;
+2023-11-30 08:54:06.784 PM: http: Sent Calender information to localhost
+2023-11-30 08:54:10.145 PM: debug: Calendar Events Query: {"id":2,"month":12}
+2023-11-30 08:54:10.152 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-12-01 06:00:00.000' AND '2024-01-01 06:00:00.000' AND `events`.`id` = 2;
+2023-11-30 08:54:10.597 PM: http: Sent Calender information to localhost
+2023-11-30 08:59:12.384 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 08:59:13.860 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 08:59:13.962 PM: info: Connection established to mariadb
+2023-11-30 08:59:13.968 PM: info: Server started on port 4000
+2023-11-30 08:59:19.804 PM: debug: Calendar Events Query: {"id":2}
+2023-11-30 08:59:19.813 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`id` = 2;
+2023-11-30 08:59:19.926 PM: http: Sent Calender information to localhost
+2023-11-30 08:59:30.571 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:59:31.664 PM: error: SequelizeConnectionError: (conn=5613, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 08:59:33.509 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 08:59:34.044 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000';
+2023-11-30 08:59:34.155 PM: http: Sent Calender information to localhost
+2023-11-30 09:03:26.524 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 09:03:27.613 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 09:03:27.722 PM: info: Connection established to mariadb
+2023-11-30 09:03:27.728 PM: info: Server started on port 4000
+2023-11-30 09:03:54.015 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 09:03:55.573 PM: error: >Could not establish a connection: 
+2023-11-30 09:03:55.575 PM: error: SequelizeConnectionError: (conn=5663, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1000ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 09:03:55.580 PM: info: Server started on port 4000
+2023-11-30 09:05:41.194 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 09:05:42.956 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 09:05:43.519 PM: info: Connection established to mariadb
+2023-11-30 09:05:43.524 PM: info: Server started on port 4000
+2023-11-30 09:05:56.842 PM: error: APIError: Not Found
+    at notFound (file:///Users/polo/Dev/Projects/Miguels/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:328:13)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:346:12)
+    at next (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:328:13)
+    at /Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/Users/polo/Dev/Projects/Miguels/node_modules/express/lib/router/index.js:346:12)
+2023-11-30 09:06:27.609 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 09:06:28.702 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 09:06:31.982 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 09:06:32.931 PM: debug: Executing (default): SELECT `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation`;
+2023-11-30 09:06:37.951 PM: http: Sent Calender information to localhost
+2023-11-30 09:06:57.567 PM: debug: Executing (default): SELECT `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation`;
+2023-11-30 09:06:57.675 PM: http: Sent Calender information to localhost
+2023-11-30 09:07:19.590 PM: debug: Executing (default): SELECT `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation`;
+2023-11-30 09:07:19.833 PM: http: Sent Calender information to localhost
+2023-11-30 09:09:53.926 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 09:09:55.480 PM: error: >Could not establish a connection: 
+2023-11-30 09:09:55.481 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1000ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 09:09:55.486 PM: info: Server started on port 4000
+2023-11-30 09:10:08.610 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 09:10:10.169 PM: error: >Could not establish a connection: 
+2023-11-30 09:10:10.171 PM: error: SequelizeConnectionError: (conn=5671, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 09:10:10.176 PM: info: Server started on port 4000
+2023-11-30 09:10:31.681 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 09:11:49.223 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 77549ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runNextTicks (node:internal/process/task_queues:64:3)
+    at process.processTimers (node:internal/timers:509:9)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 09:11:49.738 PM: debug: Executing (default): SELECT `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation`;
+2023-11-30 09:12:08.209 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 09:12:09.224 PM: error: >Could not establish a connection: 
+2023-11-30 09:12:09.226 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1003ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:36:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 09:12:09.230 PM: info: Server started on port 4000
+2023-11-30 09:12:13.167 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 09:12:29.561 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 09:12:30.572 PM: error: >Could not establish a connection: 
+2023-11-30 09:12:30.574 PM: error: SequelizeConnectionError: (conn=5675, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1000ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:36:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 09:12:30.579 PM: info: Server started on port 4000
+2023-11-30 09:12:35.087 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 09:12:59.432 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 09:13:00.732 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 09:13:00.841 PM: info: Connection established to mariadb
+2023-11-30 09:13:00.846 PM: info: Server started on port 4000
+2023-11-30 09:13:03.619 PM: debug: Calendar Events Query: {"month":11}
+2023-11-30 09:13:05.734 PM: debug: Executing (default): SELECT `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation` WHERE `reservation`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000';
+2023-11-30 09:13:11.866 PM: http: Sent Calender information to localhost
+2023-11-30 09:13:17.993 PM: debug: Calendar Events Query: {"month":10}
+2023-11-30 09:13:18.505 PM: debug: Executing (default): SELECT `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation` WHERE `reservation`.`date_start` BETWEEN '2023-10-01 05:00:00.000' AND '2023-11-01 05:00:00.000';
+2023-11-30 09:13:18.910 PM: http: Sent Calender information to localhost
+2023-11-30 09:13:21.664 PM: debug: Calendar Events Query: {"month":12}
+2023-11-30 09:13:21.670 PM: debug: Executing (default): SELECT `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation` WHERE `reservation`.`date_start` BETWEEN '2023-12-01 06:00:00.000' AND '2024-01-01 06:00:00.000';
+2023-11-30 09:13:21.772 PM: http: Sent Calender information to localhost
+2023-11-30 09:14:03.646 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 09:14:04.658 PM: error: >Could not establish a connection: 
+2023-11-30 09:14:04.659 PM: error: SequelizeConnectionError: (conn=5679, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1001ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:174:32
+    at async ConnectionManager.getConnection (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:197:7)
+    at async /Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:305:26
+    at async Sequelize.authenticate (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/sequelize.js:457:5)
+    at async mariadb_connector.connect (file:///Users/polo/Dev/Projects/Miguels/config/maria_db.js:36:16)
+    at async file:///Users/polo/Dev/Projects/Miguels/app.js:43:1
+2023-11-30 09:14:04.664 PM: info: Server started on port 4000
+2023-11-30 09:14:05.917 PM: debug: Calendar Events Query: {"month":12}
+2023-11-30 09:14:07.333 PM: debug: Executing (default): SELECT `id`, `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation` WHERE `reservation`.`date_start` BETWEEN '2023-12-01 06:00:00.000' AND '2024-01-01 06:00:00.000';
+2023-11-30 09:14:07.755 PM: http: Sent Calender information to localhost
+2023-11-30 09:14:25.720 PM: error: ValidationError: "query.id" must be a number
+2023-11-30 09:15:38.259 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 09:15:39.725 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-11-30 09:15:39.827 PM: info: Connection established to mariadb
+2023-11-30 09:15:39.832 PM: info: Server started on port 4000
+2023-11-30 09:15:42.712 PM: debug: Calendar Events Query: {"id":"5c2031df-8f89-11ee-b6a3-00163e1885ca"}
+2023-11-30 09:15:42.722 PM: debug: Executing (default): SELECT `id`, `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation` WHERE `reservation`.`id` = '5c2031df-8f89-11ee-b6a3-00163e1885ca';
+2023-11-30 09:15:42.832 PM: http: Sent Calender information to localhost
+2023-11-30 10:24:25.760 PM: info: Checking DB Connection: mariadb://csdevweb.vps.webdock.cloud
+2023-11-30 10:24:27.306 PM: error: >Could not establish a connection: 
+2023-11-30 10:24:27.307 PM: error: SequelizeConnectionError: (conn=-1, no: 45012, SQLState: 08S01) Connection timeout: failed to create socket after 1002ms
+    at ConnectionManager.connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/mariadb/connection-manager.js:100:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/Users/polo/Dev/Projects/Miguels/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:222:24)
+2023-11-30 10:24:27.312 PM: info: Server started on port 4000
+2023-11-30 10:24:42.545 PM: debug: Calendar Events Query: {"id":"5c2031df-8f89-11ee-b6a3-00163e1885ca"}
+2023-11-30 10:24:43.064 PM: debug: Executing (default): SELECT `id`, `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation` WHERE `reservation`.`id` = '5c2031df-8f89-11ee-b6a3-00163e1885ca';
+2023-11-30 10:24:43.179 PM: http: Sent Calender information to localhost
+2023-11-30 10:24:44.608 PM: debug: Calendar Events Query: {"id":"5c2031df-8f89-11ee-b6a3-00163e1885ca"}
+2023-11-30 10:24:44.612 PM: debug: Executing (default): SELECT `id`, `date_start`, `date_end`, `occasion` FROM `reservations` AS `reservation` WHERE `reservation`.`id` = '5c2031df-8f89-11ee-b6a3-00163e1885ca';
+2023-11-30 10:24:44.726 PM: http: Sent Calender information to localhost
+2023-11-30 10:40:17.015 PM: debug: Calendar Events Query: {"month":"11"}
+2023-11-30 10:40:17.647 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-11-01 05:00:00.000' AND '2023-12-01 06:00:00.000';
+2023-11-30 10:40:17.756 PM: http: Sent Calender information to localhost

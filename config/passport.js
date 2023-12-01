@@ -16,11 +16,16 @@ const local_strategy = new LocalStrategy((username, password, done) => {
 
         .then((user) => {
             //user not found
-            if (!user) return done(null, false, "Bad Login");
+
+            if (!user) return done(null, false, { message: "User Not found" });
 
             //bad password
-            //if (!bcrypt.compareSync(password, user.password)) return done(null, false, "Bad Login");
-            if (password != user.password) return done(null, false, "Bad Login");
+            //if there is a hashed password is set and it doesn't compare to the given password
+            if (user.hashedPassword && !bcrypt.compareSync(password, user.hashedPassword))
+                return done(null, false, "Bad Login");
+
+            //check if there is a non hashed password and compare
+            if (password != user.password) return done(null, false, { message: "Bad Pasword" });
             return done(null, user);
         })
 

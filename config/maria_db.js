@@ -1,18 +1,30 @@
-//contains functions for connecting
-
+/* 
+    contains functions for connecting and initializiing selected databse.
+    database params and credentials should be set in environmentally using expots in ._shrc or windows system properties 
+ */
 "use strict";
+
 import { Sequelize } from 'sequelize';
 import env_config from './env_config.js';
-
+import logger from './logger.js';
 
 export default class mariadb_connector {
 
-    static #sequelize = new Sequelize(env_config.DB_NAME, env_config.DB_USER, env_config.DB_PASS,
+    static #sequelize = new Sequelize(
+        env_config.DB_NAME,
+        env_config.DB_USER,
+        env_config.DB_PASS,
         {
             host: env_config.DB_HOST,
             port: env_config.DB_PORT || 3306,
-            dialect: env_config.DB_DIALECT || "mariadb"
-        }
+            dialect: env_config.DB_DIALECT || "mariadb",
+            logging: msg => logger.debug(msg),
+            dialectOptions: {
+                requestTimeout: 30000,
+            }
+        },
+        
+
     );
 
     static get sequelize() {
@@ -20,11 +32,12 @@ export default class mariadb_connector {
     }
 
     static async connect() {
-        console.log(">Connecting to DB ----");
+        logger.info(`Checking DB Connection: ${this.#sequelize.getDialect()}://${this.#sequelize.config.host}`);
         return await mariadb_connector.#sequelize.authenticate().then(() => {
-            console.log(">connection established");
+            logger.info(`Connection established to ${env_config.DB_DIALECT}`);
         }).catch((err) => {
-            console.log(">Could not establish a connection: ", err);
+            logger.error(">Could not establish a connection: ")
+            logger.error(err.stack);
         })
 
     };
@@ -33,35 +46,52 @@ export default class mariadb_connector {
         return mariadb_connector.#sequelize.close();
     }
 
-    static async dropTables(...models) {
-        console.log("---- Dropping Table(s) ----")
-
-        for (const model of models) {
-            await model.drop()
-                .catch((err) => {
-                    console.error(`\tError dropping table '${model.tableName}'\n`, err)
-                })
-        }
-    }
-
     //initializes sequelize class model 
-    static async initializeTables(...models) {
-        console.log("---- Starting Sync ----");
+    static async initializeTables(destructive = false, ...models) {
 
-        console.log(models)
+        if (env_config.isProduction())
+        {
+            logger.warn("initializeTables is disabled in Production")
+            return;
+        }
+
+        if(destructive) logger.warn("Executing destructive table queries")
+
+        logger.debug("Starting DB sync");
+
+        //logger.info(models)
         for (const model of models) {
             await model.sync({
-                force: true,
+                force: destructive,
                 alter: true,
                 match: /_dev$/
             })
                 .then(() => {
-                    console.log(`\tAdded table '${model.tableName}'`);
+                    logger.info(`\tAdded table '${model.tableName}'`);
                 })
                 .catch((err) => {
-                    console.error("\tAn err has occured: \n", err);
+                    logger.error("\tAn err has occured: \n", err);
                 })
         };
-        console.log("---- Sync Complete ----")
+        logger.debug("Sync Complete")
+    }
+
+    static async dropTables(...models) {
+        if (env_config.isProduction())
+        {
+            logger.warn("dropTales is disabled in Production")
+            return;
+        }
+
+        logger.debug("Dropping Table(s)")
+
+        for (const model of models) {
+            await model.drop().catch((err) => {
+                logger.error(`\tError dropping table '${model.tableName}'\n`, err)
+            })
+        }
+
+        const drop_list = models.map((model) => model.modelName)
+        logger.info(`Dropped Table(s) ${drop_list}`)
     }
 }

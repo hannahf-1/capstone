@@ -1,12 +1,19 @@
 "use strict";
 
-import { sequelize_instance } from "../../config/db_shared.js";
-import { DataTypes, Model, UUIDV4 } from "sequelize";
+import mariadb_connector from "../config/maria_db.js";
+import { DataTypes, Model } from "sequelize";
 
-class ReservationModel extends Model { 
+class ReservationModel extends Model {
     static async createReservation(data) {
         const reservation = ReservationModel.build(data);
         return await reservation.save();
+    }
+
+    static async findAllReservations(params = null, omit_sensitive = true) {
+        return await ReservationModel.findAll({
+            ...(omit_sensitive && { attributes: ["id", "date_start", "date_end", "occasion"] }),
+            ...params
+        })
     }
 
     static async findReservationByUUID(reservation_id) {
@@ -15,7 +22,7 @@ class ReservationModel extends Model {
 
     static async updateReservation(reservation_id, updatedValues) {
         const [updatedRowsCount, updatedRows] = await ReservationModel.update(updatedValues, {
-            where: { reservation_id: reservation_id },
+            where: { id: reservation_id },
             returning: true,
         });
         return { updatedRowsCount, updatedRows };
@@ -23,7 +30,7 @@ class ReservationModel extends Model {
 
     static async deleteReservation(reservation_id) {
         const deletedRowsCount = await ReservationModel.destroy({
-            where: { reservation_id: reservation_id }
+            where: { id: reservation_id }
         });
         return deletedRowsCount;
     }
@@ -33,11 +40,16 @@ class ReservationModel extends Model {
 
 ReservationModel.init(
     {
-        reservation_id: {
+        id: {
             type: DataTypes.UUID,
             defaultValue: DataTypes.UUIDV4,
             allowNull: false,
             primaryKey: true,
+        },
+
+        occasion: {
+            type: DataTypes.STRING(255),
+            allowNull: false,
         },
 
         first_name: {
@@ -65,33 +77,34 @@ ReservationModel.init(
             allowNull: false,
         },
 
-        event_date: {
+        date_start: {
             type: DataTypes.DATE,
             allowNull: false,
         },
 
-        occasion: {
-            type: DataTypes.STRING(255),
-            allowNull: false,
+        date_end: {
+            type: DataTypes.DATE,
+            allowNull: true,
         },
 
-        other: {
+        additional_information: {
             type: DataTypes.TEXT,
             allowNull: true,
         },
 
         services: {
             type: DataTypes.STRING(100),
-            allowNull: false,
+            allowNull: true,
         },
 
         special_request: {
             type: DataTypes.TEXT,
             allowNull: true,
         },
+
     },
     {
-        sequelize: sequelize_instance,
+        sequelize: mariadb_connector.sequelize,
         timestamps: true,
         modelName: "reservation", // Optional: Sequelize will automatically use the model name in plural form, but you can specify it explicitly.
     }
