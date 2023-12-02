@@ -14,6 +14,7 @@ import mariadb_connector from "./config/maria_db.js";
 import error_handler from "./middlewares/error.js";
 import rateLimit from "express-rate-limit";
 import Defaults from "./config/defaults.js";
+import { model as Reviews } from "./models/reviewModel.js";
 
 //initialization
 const app = express();
@@ -24,7 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 
 //security configurations
 app.use(cors());
-app.use(helmet());
+//app.use(helmet());
 app.use(rateLimit(Defaults.limiter_config));
 
 //session and passport configuration
@@ -34,6 +35,11 @@ app.use(passport.initialize());
 app.use(Defaults.request_logger());
 
 //routes
+app.use(express.static(process.cwd() + "/public"))
+app.get("/review", (req, res)=>{
+    res.sendFile(process.cwd() + "/public/send_review.html")
+})
+
 app.use(env_config.API_ROUTE, routes);
 
 //logging and error handling
@@ -43,6 +49,7 @@ app.use(error_handler.handler)
 
 //database connection
 await mariadb_connector.check_connection();
+//await mariadb_connector.initializeTables(Reviews)
 
 app.listen(env_config.APP_PORT, () => {
     logger.info(`Server started on port ${env_config.APP_PORT}`);

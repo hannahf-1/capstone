@@ -3,6 +3,7 @@
 import Joi from "joi";
 
 export class PublicInfoSchemas {
+
     static #calendar = {
         query: Joi.object().keys({
             type: Joi.string().valid("events", "bookings"),
@@ -16,30 +17,39 @@ export class PublicInfoSchemas {
             ),
             start_date: Joi.date().iso(),
             end_date: Joi.date().iso(),
+        }).unknown()//allow unknown keys
+    }
+
+
+    static #review = {
+        body: Joi.object().keys({
+            rating: Joi.number().integer().required(),
+            details: Joi.string().allow(null),
+            first_name: Joi.string().required(),
+            last_name: Joi.string().allow(null),
+            phone: Joi.string().allow(null),
+            email: Joi.string().email().allow(null),
         })
     }
 
     static #reservation = {
-        query: Joi.object().keys({
-            id: Joi.string().guid({ version: 'uuidv4' }).required(),
+        body: Joi.object().keys({
             occasion: Joi.string().max(255).required(),
             first_name: Joi.string().max(50).required(),
             last_name: Joi.string().max(50).required(),
-
             phone_number: Joi.string().max(15),
             email: Joi.string().email().max(100).allow(null),
-
             method_of_contact: Joi.string().max(100).required(),
             date_start: Joi.date().iso().required(),
             date_end: Joi.date().iso().allow(null).default(null),
             additional_information: Joi.string().max(65535).allow(null).default(null),
             services: Joi.string().max(100).allow(null).default(null),
             special_request: Joi.string().max(65535).allow(null).default(null),
-        }).or("email", "phone_number")
+        }).or("email", "phone_number").unknown()
     }
-    
-    static #educationHistorySchema = {
-        query: Joi.object().keys({
+
+    static #application_educationHistorySchema = {
+        application_education_history: Joi.object().keys({
             school_name: Joi.string().max(255).required(),
             years_attended: Joi.number().integer().required(),
             school_location: Joi.string().max(255).required(),
@@ -47,12 +57,11 @@ export class PublicInfoSchemas {
             state_: Joi.string().max(60).required(),
             degree_received: Joi.string().max(100).required(),
             major: Joi.string().max(100).required(),
-            applicationPersonalApplicationId: Joi.string().guid({ version: 'uuidv4' }).allow(null).default(null),
         }),
     };
 
-    static #employmentHistorySchema = {
-        query: Joi.object().keys({
+    static #application_employmentHistorySchema = {
+        application_employment_history: Joi.object().keys({
             position: Joi.string().max(100).required(),
             desired_salary: Joi.number().integer().required(),
             date_available: Joi.date().iso().required(),
@@ -70,13 +79,11 @@ export class PublicInfoSchemas {
             supervisor_name: Joi.string().max(255).required(),
             reason_for_leave: Joi.string().max(255).required(),
             can_contact: Joi.boolean().required(),
-            applicationPersonalApplicationId: Joi.string().guid({ version: 'uuidv4' }).allow(null).default(null),
         }),
     };
 
-    static #personalSchema = {
-        query: Joi.object().keys({
-            application_id: Joi.string().guid({ version: 'uuidv4' }).required(),
+    static #application_personalSchema = {
+        application_primary: Joi.object().keys({
             last_name: Joi.string().max(100).required(),
             first_name: Joi.string().max(100).required(),
             middle_name: Joi.string().max(100).required(),
@@ -94,24 +101,38 @@ export class PublicInfoSchemas {
         }),
     };
 
-    static #referenceSchema = {
-        query: Joi.object().keys({
-            id: Joi.number().integer().required(),
-            application_fk_id: Joi.string().guid({ version: 'uuidv4' }).required(),
+    static #application_referenceSchema = {
+        application_reference: Joi.object().keys({
             reference_name: Joi.string().max(100).required(),
             title: Joi.string().max(100).required(),
             company: Joi.string().max(100).required(),
             phone_number: Joi.string().max(15).required(),
-            applicationPersonalApplicationId: Joi.string().guid({ version: 'uuidv4' }).allow(null).default(null),
         }),
-    };
+    }
 
-    get calendar() {
+
+    static get calendar() {
         return PublicInfoSchemas.#calendar
     }
 
-    get reservation() {
+    static get reservation() {
         return PublicInfoSchemas.#reservation
+    }
+
+    static get review() {
+        return PublicInfoSchemas.#review
+    }
+
+    //smart
+    static get jobApp() {
+        return {
+            body: Joi.object().keys({
+                ...PublicInfoSchemas.#application_personalSchema,
+                ...PublicInfoSchemas.#application_educationHistorySchema,
+                ...PublicInfoSchemas.#application_employmentHistorySchema,
+                ...PublicInfoSchemas.#application_referenceSchema,
+            }),
+        }
     }
 
 }

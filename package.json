@@ -18,6 +18,7 @@
     "mariadb": "^3.2.2",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
+    "pug": "^3.0.2",
     "sequelize": "^6.35.1",
     "winston": "^3.11.0"
   },

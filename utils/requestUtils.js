@@ -57,7 +57,7 @@ export class RequestUtils {
         return sequelized;
     };
 
-    //
+    
     static send = (req, res, data) => {
         if (res.headersSent) {
             logger.error(`Headers already sent to ${req.hostname}`)
@@ -73,6 +73,7 @@ export class RequestUtils {
             logger.http(`Sent data to ${hostname}`);
     }
 
+    // TODO: better error handling using custom errors and httpStatus
     static #getMonthAbbreviation = (month_value = '') => {
         if (!isNaN(month_value) && Number.isInteger(Number(month_value))) {
             const month_number = Number(month_value);

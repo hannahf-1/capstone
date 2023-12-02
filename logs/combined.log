@@ -2240,3 +2240,667 @@ sql: ALTER TABLE `Events` ADD `date_start` DATETIME NOT NULL; - parameters:[]
 2023-12-01 06:15:38.890 PM: debug: Executing (default): SELECT 1+1 AS result
 2023-12-01 06:15:38.896 PM: info: Connection established to mariadb database
 2023-12-01 06:15:38.901 PM: info: Server started on port 3001
+2023-12-01 06:32:06.841 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 06:32:06.877 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 06:32:06.880 PM: info: Connection established to mariadb database
+2023-12-01 06:32:06.886 PM: info: Server started on port 3001
+2023-12-01 06:32:29.290 PM: http: New Request: GET /api/v1/public/calendar/events?month=12 ::ffff:192.58.125.7
+2023-12-01 06:32:29.293 PM: http: 	Request query: {"month":"12"}
+2023-12-01 06:32:29.295 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T18:32:32.889Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 06:32:29.296 PM: http: 	Request Authenitcated: false
+2023-12-01 06:32:29.349 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-12-01 00:00:00.000' AND '2024-01-01 00:00:00.000';
+2023-12-01 06:32:29.366 PM: http: Sent data to ::ffff:192.58.125.7
+2023-12-01 07:07:10.076 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 07:07:10.121 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 07:07:10.127 PM: info: Connection established to mariadb database
+2023-12-01 07:07:10.132 PM: info: Server started on port 3001
+2023-12-01 07:07:13.391 PM: http: New Request: GET /api/v1/public/calendar/events?hous=me ::ffff:192.58.125.7
+2023-12-01 07:07:13.393 PM: http: 	Request query: {"hous":"me"}
+2023-12-01 07:07:13.395 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T19:07:16.989Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 07:07:13.396 PM: http: 	Request Authenitcated: false
+2023-12-01 07:07:13.403 PM: error: ValidationError: "query.hous" is not allowed
+2023-12-01 07:07:38.738 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 07:07:38.780 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 07:07:38.784 PM: info: Connection established to mariadb database
+2023-12-01 07:07:38.787 PM: info: Server started on port 3001
+2023-12-01 07:07:39.601 PM: http: New Request: GET /api/v1/public/calendar/events?hous=me ::ffff:192.58.125.7
+2023-12-01 07:07:39.602 PM: http: 	Request query: {"hous":"me"}
+2023-12-01 07:07:39.603 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T19:07:43.200Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 07:07:39.604 PM: http: 	Request Authenitcated: false
+2023-12-01 07:07:39.612 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-12-01 07:07:39.634 PM: http: Sent data to ::ffff:192.58.125.7
+2023-12-01 07:14:11.999 PM: http: New Request: GET /api/v1/public/calendar/events?hous=me ::ffff:192.58.125.7
+2023-12-01 07:14:12.003 PM: http: 	Request query: {"hous":"me"}
+2023-12-01 07:14:12.004 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T19:14:15.599Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 07:14:12.006 PM: http: 	Request Authenitcated: false
+2023-12-01 07:14:12.017 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events`;
+2023-12-01 07:14:12.034 PM: http: Sent data to ::ffff:192.58.125.7
+2023-12-01 08:34:31.866 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 08:34:31.909 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 08:34:31.912 PM: info: Connection established to mariadb database
+2023-12-01 08:34:31.913 PM: warn: Executing destructive table queries
+2023-12-01 08:34:31.914 PM: debug: Starting DB sync
+2023-12-01 08:34:31.916 PM: debug: Executing (default): DROP TABLE IF EXISTS `reviews`;
+2023-12-01 08:34:31.922 PM: debug: Executing (default): CREATE TABLE IF NOT EXISTS `reviews` (`id` INTEGER UNSIGNED auto_increment , `rating` INTEGER NOT NULL, `details` TEXT, `first_name` VARCHAR(100) NOT NULL, `last_name` VARCHAR(100), `phone` VARCHAR(15), `email` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2023-12-01 08:34:31.926 PM: debug: Executing (default): SHOW INDEX FROM `reviews`
+2023-12-01 08:34:31.928 PM: info: 	Added table 'reviews'
+2023-12-01 08:34:31.929 PM: debug: Sync Complete
+2023-12-01 08:34:31.936 PM: info: Server started on port 3001
+2023-12-01 08:49:26.845 PM: http: New Request: GET /api/v1/public/calendar/events?month=12 ::ffff:192.58.125.8
+2023-12-01 08:49:26.847 PM: http: 	Request query: {"month":"12"}
+2023-12-01 08:49:26.848 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T20:49:30.444Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 08:49:26.848 PM: http: 	Request Authenitcated: false
+2023-12-01 08:49:26.896 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-12-01 00:00:00.000' AND '2024-01-01 00:00:00.000';
+2023-12-01 08:49:26.909 PM: http: Sent data to ::ffff:192.58.125.8
+2023-12-01 08:50:19.812 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 08:50:19.844 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 08:50:19.848 PM: info: Connection established to mariadb database
+2023-12-01 08:50:19.849 PM: warn: Executing destructive table queries
+2023-12-01 08:50:19.849 PM: debug: Starting DB sync
+2023-12-01 08:50:19.850 PM: debug: Sync Complete
+2023-12-01 08:50:19.853 PM: info: Server started on port 3001
+2023-12-01 09:28:32.127 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:28:32.163 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:28:32.167 PM: info: Connection established to mariadb database
+2023-12-01 09:28:32.170 PM: info: Server started on port 3001
+2023-12-01 09:29:07.338 PM: http: New Request: GET /send_review ::ffff:192.58.125.8
+2023-12-01 09:29:07.340 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:29:10.937Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:29:07.340 PM: http: 	Request Authenitcated: false
+2023-12-01 09:29:07.341 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:30:45.252 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:30:45.291 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:30:45.295 PM: info: Connection established to mariadb database
+2023-12-01 09:30:45.298 PM: info: Server started on port 3001
+2023-12-01 09:31:01.770 PM: http: New Request: GET /send_review.html ::ffff:192.58.125.8
+2023-12-01 09:31:01.772 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:31:05.370Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:31:01.773 PM: http: 	Request Authenitcated: false
+2023-12-01 09:31:01.774 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:31:06.375 PM: http: New Request: GET /send_review ::ffff:192.58.125.8
+2023-12-01 09:31:06.377 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:31:09.975Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:31:06.377 PM: http: 	Request Authenitcated: false
+2023-12-01 09:31:06.379 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:33:37.807 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:33:37.841 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:33:37.844 PM: info: Connection established to mariadb database
+2023-12-01 09:33:37.848 PM: info: Server started on port 3001
+2023-12-01 09:33:52.598 PM: http: New Request: GET /send_review ::ffff:192.58.125.8
+2023-12-01 09:33:52.599 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:33:56.197Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:33:52.600 PM: http: 	Request Authenitcated: false
+2023-12-01 09:33:52.600 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:33:56.304 PM: http: New Request: GET /send_review ::ffff:192.58.125.8
+2023-12-01 09:33:56.305 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:33:59.903Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:33:56.306 PM: http: 	Request Authenitcated: false
+2023-12-01 09:33:56.310 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:34:11.722 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:34:11.753 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:34:11.756 PM: info: Connection established to mariadb database
+2023-12-01 09:34:11.760 PM: info: Server started on port 3001
+2023-12-01 09:34:21.779 PM: http: New Request: GET /send_review ::ffff:192.58.125.8
+2023-12-01 09:34:21.782 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:34:25.378Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:34:21.783 PM: http: 	Request Authenitcated: false
+2023-12-01 09:34:21.785 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:36:15.896 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:36:15.930 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:36:15.934 PM: info: Connection established to mariadb database
+2023-12-01 09:36:15.937 PM: info: Server started on port 3001
+2023-12-01 09:36:22.112 PM: http: New Request: GET /review ::ffff:192.58.125.8
+2023-12-01 09:36:22.113 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:36:25.711Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:36:22.114 PM: http: 	Request Authenitcated: false
+2023-12-01 09:36:22.115 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:38:30.131 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:38:30.164 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:38:30.168 PM: info: Connection established to mariadb database
+2023-12-01 09:38:30.171 PM: info: Server started on port 3001
+2023-12-01 09:38:31.917 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:38:31.949 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:38:31.952 PM: info: Connection established to mariadb database
+2023-12-01 09:38:31.955 PM: info: Server started on port 3001
+2023-12-01 09:38:46.390 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:38:46.434 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:38:46.437 PM: info: Connection established to mariadb database
+2023-12-01 09:38:46.441 PM: info: Server started on port 3001
+2023-12-01 09:38:50.628 PM: http: New Request: GET /review ::ffff:192.58.125.8
+2023-12-01 09:38:50.629 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:38:54.227Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:38:50.630 PM: http: 	Request Authenitcated: false
+2023-12-01 09:38:50.633 PM: error: Error: No default engine was specified and no extension was provided.
+    at new View (/home/admin/dev/capstone/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/admin/dev/capstone/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/admin/dev/capstone/node_modules/express/lib/response.js:1039:7)
+    at file:///home/admin/dev/capstone/app.js:40:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:39:08.064 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:39:08.098 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:39:08.101 PM: info: Connection established to mariadb database
+2023-12-01 09:39:08.105 PM: info: Server started on port 3001
+2023-12-01 09:39:11.918 PM: http: New Request: GET /review ::ffff:192.58.125.8
+2023-12-01 09:39:11.919 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:39:15.517Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:39:11.920 PM: http: 	Request Authenitcated: false
+2023-12-01 09:39:11.924 PM: error: Error: Cannot find module 'html'
+Require stack:
+- /home/admin/dev/capstone/node_modules/express/lib/view.js
+- /home/admin/dev/capstone/node_modules/express/lib/application.js
+- /home/admin/dev/capstone/node_modules/express/lib/express.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1048:15)
+    at Module._load (node:internal/modules/cjs/loader:901:27)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at new View (/home/admin/dev/capstone/node_modules/express/lib/view.js:81:14)
+    at Function.render (/home/admin/dev/capstone/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/admin/dev/capstone/node_modules/express/lib/response.js:1039:7)
+    at file:///home/admin/dev/capstone/app.js:40:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+2023-12-01 09:42:13.306 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:42:13.338 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:42:13.342 PM: info: Connection established to mariadb database
+2023-12-01 09:42:13.345 PM: info: Server started on port 3001
+2023-12-01 09:42:16.928 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:42:16.962 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:42:16.966 PM: info: Connection established to mariadb database
+2023-12-01 09:42:16.969 PM: info: Server started on port 3001
+2023-12-01 09:42:23.499 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:42:23.532 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:42:23.535 PM: info: Connection established to mariadb database
+2023-12-01 09:42:23.538 PM: info: Server started on port 3001
+2023-12-01 09:42:40.738 PM: http: New Request: GET /review ::ffff:192.58.125.8
+2023-12-01 09:42:40.740 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:42:44.337Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:42:40.741 PM: http: 	Request Authenitcated: false
+2023-12-01 09:42:40.758 PM: error: Error: ENOENT: no such file or directory, stat '/public/send_review.html'
+2023-12-01 09:43:30.110 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:43:30.145 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:43:30.150 PM: info: Connection established to mariadb database
+2023-12-01 09:43:30.154 PM: info: Server started on port 3001
+2023-12-01 09:43:36.916 PM: http: New Request: GET /review ::ffff:192.58.125.8
+2023-12-01 09:43:36.919 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:43:40.514Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:43:36.920 PM: http: 	Request Authenitcated: false
+2023-12-01 09:43:36.925 PM: error: TypeError: path must be absolute or specify root to res.sendFile
+    at ServerResponse.sendFile (/home/admin/dev/capstone/node_modules/express/lib/response.js:441:11)
+    at file:///home/admin/dev/capstone/app.js:40:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at SendStream.error (/home/admin/dev/capstone/node_modules/serve-static/index.js:121:7)
+2023-12-01 09:44:23.107 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:44:23.143 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:44:23.147 PM: info: Connection established to mariadb database
+2023-12-01 09:44:23.150 PM: info: Server started on port 3001
+2023-12-01 09:44:26.906 PM: http: New Request: GET /review ::ffff:192.58.125.8
+2023-12-01 09:44:26.908 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:44:30.506Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:44:26.908 PM: http: 	Request Authenitcated: false
+2023-12-01 09:47:13.870 PM: http: New Request: GET /review ::ffff:192.58.125.8
+2023-12-01 09:47:13.888 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:47:17.470Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:47:13.890 PM: http: 	Request Authenitcated: false
+2023-12-01 09:50:08.920 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 09:50:08.952 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 09:50:08.955 PM: info: Connection established to mariadb database
+2023-12-01 09:50:08.958 PM: info: Server started on port 3001
+2023-12-01 09:50:15.882 PM: http: New Request: GET /review ::ffff:192.58.125.8
+2023-12-01 09:50:15.883 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:50:19.481Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:50:15.884 PM: http: 	Request Authenitcated: false
+2023-12-01 09:51:10.851 PM: http: New Request: GET /review ::ffff:192.58.125.8
+2023-12-01 09:51:10.853 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T21:51:14.450Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 09:51:10.855 PM: http: 	Request Authenitcated: false
+2023-12-01 10:16:49.579 PM: http: New Request: GET /api/v1/public/calendar/events?month=12 ::ffff:192.58.125.7
+2023-12-01 10:17:49.801 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 10:17:49.833 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 10:17:49.836 PM: info: Connection established to mariadb database
+2023-12-01 10:17:49.839 PM: info: Server started on port 3001
+2023-12-01 10:17:57.567 PM: http: New Request: GET /review ::ffff:192.58.125.7
+2023-12-01 10:17:57.571 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:18:01.164Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:17:57.573 PM: http: 	Request Authenitcated: false
+2023-12-01 10:18:27.724 PM: http: New Request: GET /api/v1/public/calendar/events?month=12 ::ffff:192.58.125.7
+2023-12-01 10:18:27.725 PM: http: 	Request query: {"month":"12"}
+2023-12-01 10:18:27.726 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:18:31.323Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:18:27.726 PM: http: 	Request Authenitcated: false
+2023-12-01 10:18:27.776 PM: debug: Executing (default): SELECT `id`, `name`, `details`, `date_start`, `date_end`, `createdAt`, `updatedAt` FROM `events` AS `events` WHERE `events`.`date_start` BETWEEN '2023-12-01 00:00:00.000' AND '2024-01-01 00:00:00.000';
+2023-12-01 10:18:27.786 PM: http: Sent data to ::ffff:192.58.125.7
+2023-12-01 10:23:58.760 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 10:23:58.802 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 10:23:58.805 PM: info: Connection established to mariadb database
+2023-12-01 10:23:58.809 PM: info: Server started on port 3001
+2023-12-01 10:24:05.362 PM: http: New Request: GET /review ::ffff:192.58.125.7
+2023-12-01 10:24:05.364 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:24:08.961Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:24:05.364 PM: http: 	Request Authenitcated: false
+2023-12-01 10:24:05.577 PM: http: New Request: GET /scripts/review.js ::ffff:192.58.125.7
+2023-12-01 10:24:05.578 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:24:09.177Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:24:05.579 PM: http: 	Request Authenitcated: false
+2023-12-01 10:24:09.153 PM: http: New Request: GET /favicon.ico ::ffff:192.58.125.7
+2023-12-01 10:24:09.154 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:24:12.752Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:24:09.155 PM: http: 	Request Authenitcated: false
+2023-12-01 10:24:09.156 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 10:24:21.486 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 10:24:21.524 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 10:24:21.528 PM: info: Connection established to mariadb database
+2023-12-01 10:24:21.533 PM: info: Server started on port 3001
+2023-12-01 10:24:22.623 PM: http: New Request: GET /review ::ffff:192.58.125.7
+2023-12-01 10:24:22.624 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:24:26.222Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:24:22.625 PM: http: 	Request Authenitcated: false
+2023-12-01 10:24:22.789 PM: http: New Request: GET /scripts/review.js ::ffff:192.58.125.7
+2023-12-01 10:24:22.791 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:24:26.389Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:24:22.793 PM: http: 	Request Authenitcated: false
+2023-12-01 10:25:31.683 PM: http: New Request: GET /review ::ffff:192.58.125.7
+2023-12-01 10:25:31.685 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:25:35.283Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:25:31.686 PM: http: 	Request Authenitcated: false
+2023-12-01 10:25:31.835 PM: http: New Request: GET /scripts/review.js ::ffff:192.58.125.7
+2023-12-01 10:25:31.836 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:25:35.435Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:25:31.837 PM: http: 	Request Authenitcated: false
+2023-12-01 10:26:42.677 PM: http: New Request: GET /review ::ffff:192.58.125.7
+2023-12-01 10:26:42.679 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:26:46.277Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:26:42.680 PM: http: 	Request Authenitcated: false
+2023-12-01 10:26:42.843 PM: http: New Request: GET /scripts/review.js ::ffff:192.58.125.7
+2023-12-01 10:26:42.845 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:26:46.443Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:26:42.847 PM: http: 	Request Authenitcated: false
+2023-12-01 10:48:17.863 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 10:48:17.929 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 10:48:17.936 PM: info: Connection established to mariadb database
+2023-12-01 10:48:17.942 PM: info: Server started on port 3001
+2023-12-01 10:49:00.979 PM: http: New Request: GET /review ::ffff:192.58.125.7
+2023-12-01 10:49:00.981 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:49:04.578Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:49:00.982 PM: http: 	Request Authenitcated: false
+2023-12-01 10:49:01.152 PM: http: New Request: GET /scripts/review.js ::ffff:192.58.125.7
+2023-12-01 10:49:01.154 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:49:04.752Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:49:01.154 PM: http: 	Request Authenitcated: false
+2023-12-01 10:49:01.265 PM: http: New Request: POST /api/v1/public/review/submit ::ffff:192.58.125.7
+2023-12-01 10:49:01.266 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:49:04.865Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:49:01.267 PM: http: 	Request Authenitcated: false
+2023-12-01 10:49:01.272 PM: error: ValidationError: "body.rating" is required. "body.first_name" is required
+2023-12-01 10:49:31.367 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 10:49:31.401 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 10:49:31.405 PM: info: Connection established to mariadb database
+2023-12-01 10:49:31.409 PM: info: Server started on port 3001
+2023-12-01 10:49:46.441 PM: http: New Request: GET /review ::ffff:192.58.125.7
+2023-12-01 10:49:46.443 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:49:50.040Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:49:46.444 PM: http: 	Request Authenitcated: false
+2023-12-01 10:49:46.676 PM: http: New Request: GET /scripts/review.js ::ffff:192.58.125.7
+2023-12-01 10:49:46.677 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:49:50.276Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:49:46.678 PM: http: 	Request Authenitcated: false
+2023-12-01 10:49:46.771 PM: http: New Request: POST /api/v1/public/review/submit ::ffff:192.58.125.7
+2023-12-01 10:49:46.772 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:49:50.370Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:49:46.772 PM: http: 	Request Authenitcated: false
+2023-12-01 10:49:46.797 PM: error: ValidationError: "body.rating" is required. "body.first_name" is required
+2023-12-01 10:51:11.052 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 10:51:11.086 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 10:51:11.090 PM: info: Connection established to mariadb database
+2023-12-01 10:51:11.093 PM: info: Server started on port 3001
+2023-12-01 10:51:16.001 PM: http: New Request: GET /review ::ffff:192.58.125.7
+2023-12-01 10:51:22.334 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:51:16.763Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:51:22.335 PM: http: 	Request Authenitcated: false
+2023-12-01 10:51:41.903 PM: http: New Request: GET /scripts/review.js ::ffff:192.58.125.7
+2023-12-01 10:53:56.485 PM: info: Checking 'mariadb' Connection: localhost
+2023-12-01 10:53:56.542 PM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-01 10:53:56.546 PM: info: Connection established to mariadb database
+2023-12-01 10:53:56.549 PM: info: Server started on port 3001
+2023-12-01 10:54:22.638 PM: http: New Request: GET /review ::ffff:192.58.125.7
+2023-12-01 10:54:44.827 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:54:26.237Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:54:44.829 PM: http: 	Request Authenitcated: false
+2023-12-01 10:54:45.038 PM: http: New Request: GET /scripts/review.js ::ffff:192.58.125.7
+2023-12-01 10:54:51.727 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:54:48.637Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:54:51.729 PM: http: 	Request Authenitcated: false
+2023-12-01 10:54:51.852 PM: http: New Request: POST /api/v1/public/review/submit ::ffff:192.58.125.7
+2023-12-01 10:54:51.854 PM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-01 10:54:51.854 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T22:54:55.452Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 10:54:51.855 PM: http: 	Request Authenitcated: false
+2023-12-01 10:54:51.880 PM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2023-12-01 10:54:51.885 PM: error: TypeError: res.status(...).JSON is not a function
+    at submitReview (file:///home/admin/dev/capstone/controllers/publicInfoController.js:76:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-01 11:23:46.704 PM: http: New Request: GET / ::ffff:183.136.225.9
+2023-12-01 11:23:46.706 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T23:23:50.303Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 11:23:46.707 PM: http: 	Request Authenitcated: false
+2023-12-01 11:23:46.710 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 11:23:47.170 PM: http: New Request: GET /favicon.ico ::ffff:183.136.225.9
+2023-12-01 11:23:47.172 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T23:23:50.770Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 11:23:47.172 PM: http: 	Request Authenitcated: false
+2023-12-01 11:23:47.173 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 11:23:47.704 PM: http: New Request: GET /robots.txt ::ffff:183.136.225.9
+2023-12-01 11:23:47.705 PM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-01T23:23:51.304Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-01 11:23:47.706 PM: http: 	Request Authenitcated: false
+2023-12-01 11:23:47.708 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:01:20.407 AM: info: Checking 'mariadb' Connection: localhost
+2023-12-02 06:01:20.455 AM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-02 06:02:29.209 AM: info: Checking 'mariadb' Connection: localhost
+2023-12-02 06:02:29.242 AM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-02 06:02:29.246 AM: info: Connection established to mariadb database
+2023-12-02 06:02:29.249 AM: info: Server started on port 3001
+2023-12-02 06:05:03.850 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:05:03.851 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:05:07.449Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:05:03.853 AM: http: 	Request Authenitcated: false
+2023-12-02 06:05:04.071 AM: http: New Request: GET /scripts/review.js ::ffff:198.232.113.131
+2023-12-02 06:05:04.073 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:05:07.671Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:05:04.074 AM: http: 	Request Authenitcated: false
+2023-12-02 06:05:04.199 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:198.232.113.131
+2023-12-02 06:05:04.201 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:05:04.202 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:05:07.799Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:05:04.203 AM: http: 	Request Authenitcated: false
+2023-12-02 06:05:04.225 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2023-12-02 06:05:04.240 AM: error: TypeError: res.status(...).JSON is not a function
+    at submitReview (file:///home/admin/dev/capstone/controllers/publicInfoController.js:76:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-02 06:05:14.564 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:05:14.565 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:05:18.164Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:05:14.566 AM: http: 	Request Authenitcated: false
+2023-12-02 06:05:14.693 AM: http: New Request: GET /scripts/review.js ::ffff:198.232.113.131
+2023-12-02 06:05:14.694 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:05:18.293Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:05:14.695 AM: http: 	Request Authenitcated: false
+2023-12-02 06:05:14.773 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:198.232.113.131
+2023-12-02 06:05:14.776 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:05:14.777 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:05:18.371Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:05:14.777 AM: http: 	Request Authenitcated: false
+2023-12-02 06:05:14.790 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2023-12-02 06:05:14.792 AM: error: TypeError: res.status(...).JSON is not a function
+    at submitReview (file:///home/admin/dev/capstone/controllers/publicInfoController.js:76:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-02 06:05:14.942 AM: http: New Request: GET /favicon.ico ::ffff:198.232.113.131
+2023-12-02 06:05:14.944 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:05:18.542Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:05:14.944 AM: http: 	Request Authenitcated: false
+2023-12-02 06:05:14.946 AM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:05:27.700 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:05:27.701 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:05:31.300Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:05:27.702 AM: http: 	Request Authenitcated: false
+2023-12-02 06:05:27.826 AM: http: New Request: GET /scripts/review.js ::ffff:198.232.113.131
+2023-12-02 06:05:27.827 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:05:31.426Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:05:27.828 AM: http: 	Request Authenitcated: false
+2023-12-02 06:05:27.899 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:198.232.113.131
+2023-12-02 06:05:27.903 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:05:27.904 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:05:31.498Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:05:27.905 AM: http: 	Request Authenitcated: false
+2023-12-02 06:05:27.918 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2023-12-02 06:05:27.923 AM: error: TypeError: res.status(...).JSON is not a function
+    at submitReview (file:///home/admin/dev/capstone/controllers/publicInfoController.js:76:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-02 06:06:30.110 AM: info: Checking 'mariadb' Connection: localhost
+2023-12-02 06:06:30.141 AM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-02 06:06:30.145 AM: info: Connection established to mariadb database
+2023-12-02 06:06:30.148 AM: info: Server started on port 3001
+2023-12-02 06:06:32.882 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:06:32.884 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:06:36.481Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:06:32.885 AM: http: 	Request Authenitcated: false
+2023-12-02 06:06:33.000 AM: http: New Request: GET /scripts/review.js ::ffff:198.232.113.131
+2023-12-02 06:06:33.003 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:06:36.599Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:06:33.005 AM: http: 	Request Authenitcated: false
+2023-12-02 06:06:33.088 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:198.232.113.131
+2023-12-02 06:06:33.089 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:06:33.090 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:06:36.688Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:06:33.090 AM: http: 	Request Authenitcated: false
+2023-12-02 06:06:33.102 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+{"level":"info","message":"Checking 'mariadb' Connection: localhost","timestamp":"2023-12-02 06:08:08.322 AM"}
+{"level":"debug","message":"Executing (default): SELECT 1+1 AS result","timestamp":"2023-12-02 06:08:08.359 AM"}
+{"level":"info","message":"Connection established to mariadb database","timestamp":"2023-12-02 06:08:08.363 AM"}
+{"level":"info","message":"Server started on port 3001","timestamp":"2023-12-02 06:08:08.366 AM"}
+2023-12-02 06:10:44.684 AM: info: Checking 'mariadb' Connection: localhost
+2023-12-02 06:10:44.716 AM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-02 06:10:44.719 AM: info: Connection established to mariadb database
+2023-12-02 06:10:44.722 AM: info: Server started on port 3001
+2023-12-02 06:20:00.814 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:20:00.815 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:20:04.412Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:20:00.816 AM: http: 	Request Authenitcated: false
+2023-12-02 06:20:00.998 AM: http: New Request: GET /scripts/review.js ::ffff:198.232.113.131
+2023-12-02 06:20:00.999 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:20:04.598Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:20:01.000 AM: http: 	Request Authenitcated: false
+2023-12-02 06:20:01.272 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:198.232.113.131
+2023-12-02 06:20:01.274 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:20:01.274 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:20:04.872Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:20:01.275 AM: http: 	Request Authenitcated: false
+2023-12-02 06:20:01.312 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2023-12-02 06:21:35.538 AM: http: New Request: GET /apple-touch-icon-precomposed.png ::ffff:198.232.113.131
+2023-12-02 06:21:35.539 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:21:39.137Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:21:35.540 AM: http: 	Request Authenitcated: false
+2023-12-02 06:21:35.542 AM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:21:35.548 AM: http: New Request: GET /favicon.ico ::ffff:198.232.113.131
+2023-12-02 06:21:35.549 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:21:39.148Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:21:35.549 AM: http: 	Request Authenitcated: false
+2023-12-02 06:21:35.550 AM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:21:35.553 AM: http: New Request: GET /apple-touch-icon.png ::ffff:198.232.113.131
+2023-12-02 06:21:35.554 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:21:39.153Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:21:35.555 AM: http: 	Request Authenitcated: false
+2023-12-02 06:21:35.556 AM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:21:36.007 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:21:36.009 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:21:39.607Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:21:36.009 AM: http: 	Request Authenitcated: false
+2023-12-02 06:22:14.390 AM: http: New Request: GET /review ::ffff:74.193.43.3
+2023-12-02 06:22:14.392 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:22:17.990Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:22:14.393 AM: http: 	Request Authenitcated: false
+2023-12-02 06:22:14.479 AM: http: New Request: GET /scripts/review.js ::ffff:74.193.43.3
+2023-12-02 06:22:14.481 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:22:18.079Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:22:14.482 AM: http: 	Request Authenitcated: false
+2023-12-02 06:22:14.565 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:74.193.43.3
+2023-12-02 06:22:14.567 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:22:14.567 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:22:18.165Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:22:14.568 AM: http: 	Request Authenitcated: false
+2023-12-02 06:22:14.580 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2023-12-02 06:22:14.681 AM: http: New Request: GET /favicon.ico ::ffff:74.193.43.3
+2023-12-02 06:22:14.682 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:22:18.281Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:22:14.683 AM: http: 	Request Authenitcated: false
+2023-12-02 06:22:14.684 AM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:22:56.854 AM: info: Checking 'mariadb' Connection: localhost
+2023-12-02 06:22:56.886 AM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-02 06:22:56.890 AM: info: Connection established to mariadb database
+2023-12-02 06:22:56.893 AM: info: Server started on port 3001
+2023-12-02 06:23:20.780 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:23:20.781 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:23:24.379Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:23:20.782 AM: http: 	Request Authenitcated: false
+2023-12-02 06:23:20.914 AM: http: New Request: GET /scripts/review.js ::ffff:198.232.113.131
+2023-12-02 06:23:20.916 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:23:24.514Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:23:20.918 AM: http: 	Request Authenitcated: false
+2023-12-02 06:23:21.090 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:198.232.113.131
+2023-12-02 06:23:21.092 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:23:21.093 AM: http: 	Request session: {"cookie":{"originalMaxAge":3599,"expires":"2023-12-02T06:23:24.689Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:23:21.094 AM: http: 	Request Authenitcated: false
+2023-12-02 06:23:21.123 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2023-12-02 06:23:46.433 AM: info: Checking 'mariadb' Connection: localhost
+2023-12-02 06:23:46.476 AM: debug: Executing (default): SELECT 1+1 AS result
+2023-12-02 06:23:46.481 AM: info: Connection established to mariadb database
+2023-12-02 06:23:46.486 AM: info: Server started on port 3001
+2023-12-02 06:24:09.446 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:24:09.448 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:24:13.045Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:24:09.448 AM: http: 	Request Authenitcated: false
+2023-12-02 06:24:09.584 AM: http: New Request: GET /scripts/review.js ::ffff:198.232.113.131
+2023-12-02 06:24:09.585 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:24:13.183Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:24:09.586 AM: http: 	Request Authenitcated: false
+2023-12-02 06:24:09.694 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:198.232.113.131
+2023-12-02 06:24:09.697 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:24:09.699 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:24:13.293Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:24:09.700 AM: http: 	Request Authenitcated: false
+2023-12-02 06:24:09.736 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2023-12-02 06:24:24.484 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:24:24.485 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:24:28.084Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:24:24.486 AM: http: 	Request Authenitcated: false
+2023-12-02 06:24:24.593 AM: http: New Request: GET /scripts/review.js ::ffff:198.232.113.131
+2023-12-02 06:24:24.596 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:24:28.193Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:24:24.597 AM: http: 	Request Authenitcated: false
+2023-12-02 06:24:24.672 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:198.232.113.131
+2023-12-02 06:24:24.673 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:24:24.674 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:24:28.272Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:24:24.674 AM: http: 	Request Authenitcated: false
+2023-12-02 06:24:24.681 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2023-12-02 06:25:26.052 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:25:26.053 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:25:29.651Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:25:26.053 AM: http: 	Request Authenitcated: false
+2023-12-02 06:25:26.159 AM: http: New Request: GET /scripts/review.js ::ffff:198.232.113.131
+2023-12-02 06:25:26.160 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:25:29.759Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:25:26.161 AM: http: 	Request Authenitcated: false
+2023-12-02 06:25:26.245 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:198.232.113.131
+2023-12-02 06:25:26.246 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:25:26.246 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:25:29.844Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:25:26.247 AM: http: 	Request Authenitcated: false
+2023-12-02 06:25:26.254 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);
+2023-12-02 06:25:40.327 AM: http: New Request: GET /review ::ffff:198.232.113.131
+2023-12-02 06:25:40.330 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:25:43.927Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:25:40.331 AM: http: 	Request Authenitcated: false
+2023-12-02 06:25:40.441 AM: http: New Request: GET /scripts/review.js ::ffff:198.232.113.131
+2023-12-02 06:25:40.442 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:25:44.040Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:25:40.443 AM: http: 	Request Authenitcated: false
+2023-12-02 06:25:40.516 AM: http: New Request: POST /api/v1/public/review/submit ::ffff:198.232.113.131
+2023-12-02 06:25:40.521 AM: http: 	Request body: {"rating":1,"details":"This is a test review.","first_name":"Test","last_name":"Test","phone":"1234567890","email":"test@example.com"}
+2023-12-02 06:25:40.526 AM: http: 	Request session: {"cookie":{"originalMaxAge":3600,"expires":"2023-12-02T06:25:44.116Z","secure":true,"httpOnly":true,"path":"/","sameSite":"strict"}}
+2023-12-02 06:25:40.528 AM: http: 	Request Authenitcated: false
+2023-12-02 06:25:40.549 AM: debug: Executing (default): INSERT INTO `reviews` (`id`,`rating`,`details`,`first_name`,`last_name`,`phone`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?,?,?);

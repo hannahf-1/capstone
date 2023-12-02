@@ -766,3 +766,232 @@ sql: ALTER TABLE `Events` ADD `date_start` DATETIME NOT NULL; - parameters:[]
     at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
     at initialize (/home/admin/dev/capstone/node_modules/passport/lib/middleware/initialize.js:98:5)
     at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+2023-12-01 07:07:13.403 PM: error: ValidationError: "query.hous" is not allowed
+2023-12-01 09:29:07.341 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:31:01.774 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:31:06.379 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:33:52.600 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:33:56.310 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:34:21.785 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:36:22.115 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:38:50.633 PM: error: Error: No default engine was specified and no extension was provided.
+    at new View (/home/admin/dev/capstone/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/admin/dev/capstone/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/admin/dev/capstone/node_modules/express/lib/response.js:1039:7)
+    at file:///home/admin/dev/capstone/app.js:40:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 09:39:11.924 PM: error: Error: Cannot find module 'html'
+Require stack:
+- /home/admin/dev/capstone/node_modules/express/lib/view.js
+- /home/admin/dev/capstone/node_modules/express/lib/application.js
+- /home/admin/dev/capstone/node_modules/express/lib/express.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1048:15)
+    at Module._load (node:internal/modules/cjs/loader:901:27)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at new View (/home/admin/dev/capstone/node_modules/express/lib/view.js:81:14)
+    at Function.render (/home/admin/dev/capstone/node_modules/express/lib/application.js:587:12)
+    at ServerResponse.render (/home/admin/dev/capstone/node_modules/express/lib/response.js:1039:7)
+    at file:///home/admin/dev/capstone/app.js:40:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+2023-12-01 09:42:40.758 PM: error: Error: ENOENT: no such file or directory, stat '/public/send_review.html'
+2023-12-01 09:43:36.925 PM: error: TypeError: path must be absolute or specify root to res.sendFile
+    at ServerResponse.sendFile (/home/admin/dev/capstone/node_modules/express/lib/response.js:441:11)
+    at file:///home/admin/dev/capstone/app.js:40:9
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/admin/dev/capstone/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at SendStream.error (/home/admin/dev/capstone/node_modules/serve-static/index.js:121:7)
+2023-12-01 10:24:09.156 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 10:49:01.272 PM: error: ValidationError: "body.rating" is required. "body.first_name" is required
+2023-12-01 10:49:46.797 PM: error: ValidationError: "body.rating" is required. "body.first_name" is required
+2023-12-01 10:54:51.885 PM: error: TypeError: res.status(...).JSON is not a function
+    at submitReview (file:///home/admin/dev/capstone/controllers/publicInfoController.js:76:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-01 11:23:46.710 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 11:23:47.173 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-01 11:23:47.708 PM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:05:04.240 AM: error: TypeError: res.status(...).JSON is not a function
+    at submitReview (file:///home/admin/dev/capstone/controllers/publicInfoController.js:76:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-02 06:05:14.792 AM: error: TypeError: res.status(...).JSON is not a function
+    at submitReview (file:///home/admin/dev/capstone/controllers/publicInfoController.js:76:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-02 06:05:14.946 AM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:05:27.923 AM: error: TypeError: res.status(...).JSON is not a function
+    at submitReview (file:///home/admin/dev/capstone/controllers/publicInfoController.js:76:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-12-02 06:21:35.542 AM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:21:35.550 AM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:21:35.556 AM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+2023-12-02 06:22:14.684 AM: error: APIError: Not Found
+    at notFound (file:///home/admin/dev/capstone/middlewares/error.js:32:14)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:280:10)
+    at Layer.handle [as handle_request] (/home/admin/dev/capstone/node_modules/express/lib/router/layer.js:91:12)
+    at trim_prefix (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:328:13)
+    at /home/admin/dev/capstone/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/admin/dev/capstone/node_modules/express/lib/router/index.js:346:12)

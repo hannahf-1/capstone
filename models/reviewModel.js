@@ -5,8 +5,7 @@ import { DataTypes, Model } from "sequelize";
 
 class ReviewModel extends Model {
     static async createReview(data) {
-        const review = ReviewModel.build(data);
-        return await review.save();
+        return await ReviewModel.create(data);
     }
 
     static async findReviewById(reviewID) {
@@ -36,13 +35,12 @@ class ReviewModel extends Model {
 
 ReviewModel.init(
     {
-        reviewID: {
+        id: {
             type: DataTypes.INTEGER.UNSIGNED,
-            allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
-        
+
         rating: {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -56,10 +54,10 @@ ReviewModel.init(
             type: DataTypes.TEXT,
             allowNull: true,
         },
-        
+
         first_name: {
             type: DataTypes.STRING(100),
-            allowNull: true,
+            allowNull: false,
         },
 
         last_name: {
@@ -80,7 +78,7 @@ ReviewModel.init(
     },
     {
         sequelize: mariadb_connector.sequelize,
-        timestamps: false,
+        timestamps: true,
         modelName: "reviews",
     }
 );
