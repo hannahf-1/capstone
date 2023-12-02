@@ -1,8 +1,8 @@
 "use strict";
 
-import { sequelize_instance } from "../../../config/db_shared.js";
 import { DataTypes, Model } from "sequelize";
-import { model as ApplicationPersonalModel } from "./applicationPersonalModel.js";
+import { model as ApplicationPrimaryModel } from "./primaryModel.js";
+import mariadb_connector from "../../config/maria_db.js";
 
 class ApplicationReferencesModel extends Model {
     static async createReference(application_fk_id, data) {
@@ -47,16 +47,16 @@ ApplicationReferencesModel.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        application_fk_id: {
+/*         application_fk_id: {
             type: DataTypes.UUID,
             allowNull: false,
             references: {
-                model: ApplicationPersonalModel,
-                key: 'application_id'
+                model: ApplicationPrimaryModel,
+                key: 'id'
             },
             onUpdate: 'CASCADE',
             onDelete: 'CASCADE',
-        },
+        }, */
         reference_name: {
             type: DataTypes.STRING(100),
             allowNull: false,
@@ -75,7 +75,7 @@ ApplicationReferencesModel.init(
         },
     },
     {
-        sequelize: sequelize_instance,
+        sequelize: mariadb_connector.sequelize,
         timestamps: false,
         modelName: "application_references",
     }
@@ -83,7 +83,8 @@ ApplicationReferencesModel.init(
 );
 
 //redundant since we already set the foreign_key application_fk_id in the model initialization but still good for clarity
-ApplicationPersonalModel.hasMany(ApplicationReferencesModel);
+//ApplicationPrimaryModel.hasMany(ApplicationReferencesModel);
+ApplicationReferencesModel.belongsTo(ApplicationPrimaryModel, { onDelete: 'CASCADE', onUpdate: 'CASCADE'})
 
 export { ApplicationReferencesModel as model };
 

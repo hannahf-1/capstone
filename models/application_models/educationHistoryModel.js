@@ -1,21 +1,25 @@
 "use strict";
 
-import { sequelize_instance } from "../../../config/db_shared.js";
 import { DataTypes, Model } from "sequelize";
-import { model as ApplicationPersonalModel } from "./applicationPersonalModel.js";
+import mariadb_connector from "../../config/maria_db.js";
+import { model as ApplicationPrimaryModel } from "./primaryModel.js";
 
 class ApplicationEducationHistoryModel extends Model {
-    static async createEducationHistory(application_fk_id, data) {
+    static async createWithFK(application_fk_id, data) {
         data.application_fk_id = application_fk_id;
-        const educationHistory = ApplicationEducationHistoryModel.build(data);
-        return await educationHistory.save();
+        return await ApplicationEducationHistoryModel.create(data);
+
+
+        /* const educationHistory = ApplicationEducationHistoryModel.build(data);
+        return await educationHistory.save(); */
     }
 
-    static async findEducationHistoryById(id) {
+    // TODO: delete and refactor
+    static async findByID(id) {
         return await ApplicationEducationHistoryModel.findByPk(id);
     }
 
-    static async findAllEducationHistoryByApplicationId(application_fk_id) {
+    static async findAllByAppID(application_fk_id) {
         return await ApplicationEducationHistoryModel.findAll({
             where: { application_fk_id: application_fk_id }
         });
@@ -35,27 +39,27 @@ class ApplicationEducationHistoryModel extends Model {
         });
         return deletedRowsCount;
     }
-    
+
 }
 
 ApplicationEducationHistoryModel.init(
     {
         id: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.INTEGER.UNSIGNED,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
-        application_fk_id: {
-            type: DataTypes.UUID,
-            allowNull: false,
-            references: {
-                model: ApplicationPersonalModel,
-                key: 'application_id'
-            },
-            onUpdate: 'CASCADE',
-            onDelete: 'CASCADE',
-        },
+        /*         application_fk_id: {
+                    type: DataTypes.UUID,
+                    allowNull: false,
+                    references: {
+                        model: ApplicationPrimaryModel,
+                        key: 'id'
+                    },
+                    onUpdate: 'CASCADE',
+                    onDelete: 'CASCADE',
+                }, */
         school_name: {
             type: DataTypes.STRING(255),
             allowNull: false,
@@ -86,13 +90,13 @@ ApplicationEducationHistoryModel.init(
         },
     },
     {
-        sequelize: sequelize_instance,
+        sequelize: mariadb_connector.sequelize,
         timestamps: false,
         modelName: "application_education_history",
     }
 );
 
 //redundant since we already set the foreign_key application_fk_id in the model initialization but still good for clarity
-ApplicationPersonalModel.hasMany(ApplicationEducationHistoryModel);
-
+//ApplicationPrimaryModel.hasMany(ApplicationEducationHistoryModel);
+ApplicationEducationHistoryModel.belongsTo(ApplicationPrimaryModel, { onDelete: 'CASCADE', onUpdate: 'CASCADE' })
 export { ApplicationEducationHistoryModel as model };
