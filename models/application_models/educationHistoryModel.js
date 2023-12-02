@@ -97,6 +97,6 @@ ApplicationEducationHistoryModel.init(
 );
 
 //redundant since we already set the foreign_key application_fk_id in the model initialization but still good for clarity
-//ApplicationPrimaryModel.hasMany(ApplicationEducationHistoryModel);
+
 ApplicationEducationHistoryModel.belongsTo(ApplicationPrimaryModel, { onDelete: 'CASCADE', onUpdate: 'CASCADE' })
 export { ApplicationEducationHistoryModel as model };
