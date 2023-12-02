@@ -3816,6 +3816,7 @@
 2023-12-02 11:28:06.077 PM: debug: Executing (default): UPDATE `application_references` SET `applicationPrimaryId`=? WHERE `id` = ?
 2023-12-02 11:28:06.080 PM: debug: Executing (default): UPDATE `application_education_histories` SET `applicationPrimaryId`=? WHERE `id` = ?
 2023-12-02 11:28:06.082 PM: info: Created job application entry ref: ef5d9f72-6f3d-41c0-9e3e-6d56297f6a86
+<<<<<<< HEAD
 2023-12-02 11:37:46.151 PM: info: Checking 'mariadb' Connection: localhost
 2023-12-02 11:37:46.186 PM: debug: Executing (default): SELECT 1+1 AS result
 2023-12-02 11:37:46.190 PM: info: Connection established to mariadb database
@@ -3865,3 +3866,5 @@
 2023-12-02 11:39:13.168 PM: debug: Executing (default): UPDATE `application_references` SET `applicationPrimaryId`=? WHERE `id` = ?
 2023-12-02 11:39:13.170 PM: debug: Executing (default): UPDATE `application_education_histories` SET `applicationPrimaryId`=? WHERE `id` = ?
 2023-12-02 11:39:13.175 PM: info: Created job application entry ref: c696c045-a945-42a7-9db8-7a538673efcf
+=======
+>>>>>>> cafcba9d0173243ddab8ba7b92b908063cf38980
