@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/scripts/styles.css">
 </head>
 <body>
     <h1 id="main"></h1>
+    <div>
+        <button onclick="sendReview(review_data, 'res1')">Send Review</button> |
+        <span id="res1">asdf<p>
+    </div>
+
+    <div class="inline-container">
+        <button onclick="sendReview(reservation_data, 'res2')">Send Reservation</button> |
+        <span id="res2">asdf<p>
+    </div>
+    
+    <div class="inline-container">
+        <button onclick="sendReview(jobapp_data, 'res3')">Send Job App</button> |
+        <span id="res3">asdf<p>
+    </div>
+    
     <script src="/scripts/review.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-document.getElementById("main").innerHTML = "Send Review Script";
+document.getElementById("main").innerHTML = "Request Script Loaded";
 
 
 let base_url = "http://csdevweb.vps.webdock.cloud:3001/api/v1/public";
@@ -21,14 +21,16 @@ function sendReview(data, method = "POST", id) {
       if (xhr.status === 200) {
         // Successful response, handle it here
         console.log("Request successful:", xhr.responseText);
+        if (id)
+          document.getElementById(id).innerHTML = xhr.responseText;
       } else {
         // Handle errors here
         console.error("Error:", xhr.statusText);
       }
     }
+
+
   }
-  if (id)
-    document.getElementById(id).innerHTML = xhr.responseText;
 }
 
 // Send the POST request with the JSON data
@@ -44,7 +46,21 @@ let review_data = {
 
 }
 
-const formData = {
+const reservation_data = {
+  occasion: "Birthday Party",
+  first_name: "John",
+  last_name: "Doe",
+  phone_number: "555-1234",
+  email: "john.doe@example.com",
+  method_of_contact: "Email",
+  date_start: "2023-01-15T18:00:00Z",
+  date_end: "2023-01-15T22:00:00Z",
+  additional_information: "Additional details about the reservation.",
+  services: "Catering",
+  special_request: "Special requests or notes for the reservation.",
+};
+
+const jobapp_data = {
   application_primary: {
     last_name: "Doe",
     first_name: "John",
