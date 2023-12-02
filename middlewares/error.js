@@ -24,7 +24,7 @@ export const converter = (err, req, res, next) => {
 		apiError.message = [{ message: err.message }];
 		return next(apiError);
 	}
-	err.message = [{ message: err.message }];
+	//err.message = [{ message: err.message }];
 	return next(err);
 };
 
@@ -39,6 +39,7 @@ export const handler = (err, req, res, next) => {
 		message = httpStatus[httpStatus.INTERNAL_SERVER_ERROR];
 	}
 
+	//logger.error(JSON.stringify(err.message));
 	logger.error(err.stack);
 	return res.status(status).json({
 		status: status,

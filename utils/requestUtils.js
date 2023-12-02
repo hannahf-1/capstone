@@ -7,7 +7,7 @@ import { INTEGER, Op } from "sequelize"
 //optimized using ChatGPT
 export class RequestUtils {
 
-    static convertToSequelize = (query) => {
+    static sequalizeQuery = (query) => {
         const query_entries = Object.entries(query);
         const sequelized = {};
     
