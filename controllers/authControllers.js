@@ -2,7 +2,6 @@
 
 import { passport_config as passport } from "../config/passport.js";
 
-import { model as UserAccounts } from "../models/userAccountModel.js";
 import APIError from "../utils/APIError.js";
 import httpStatus from "http-status"
 
