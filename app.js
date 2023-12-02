@@ -14,7 +14,10 @@ import mariadb_connector from "./config/maria_db.js";
 import error_handler from "./middlewares/error.js";
 import rateLimit from "express-rate-limit";
 import Defaults from "./config/defaults.js";
-import { model as Reviews } from "./models/reviewModel.js";
+import { model as AppPrimary } from "./models/application_models/primaryModel.js";
+import { model as AppEducationHistory } from "./models/application_models/educationHistoryModel.js";
+import { model as AppEmploymentHistory } from "./models/application_models/employmentHistoryModel.js";
+import { model as AppReferences } from "./models/application_models/referencesModel.js";
 
 //initialization
 const app = express();
@@ -36,7 +39,7 @@ app.use(Defaults.request_logger());
 
 //routes
 app.use(express.static(process.cwd() + "/public"))
-app.get("/review", (req, res)=>{
+app.get("/review", (req, res) => {
     res.sendFile(process.cwd() + "/public/send_review.html")
 })
 
@@ -49,8 +52,13 @@ app.use(error_handler.handler)
 
 //database connection
 await mariadb_connector.check_connection();
-//await mariadb_connector.initializeTables(Reviews)
-
+/* await mariadb_connector.initializeTables(true,
+    AppPrimary,
+    AppEducationHistory,
+    AppEmploymentHistory,
+    AppReferences,
+)
+ */
 app.listen(env_config.APP_PORT, () => {
     logger.info(`Server started on port ${env_config.APP_PORT}`);
 })
