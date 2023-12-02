@@ -53,12 +53,11 @@ export class publicInfoController {
     }
 
 
+
     static createReview = async (req, res, next) => {
         const review = await Review.create(req.body);
-        logger.info(`Created user review ref: ${review.id}`)
         res.status(httpStatus.CREATED).json(review);
     }
-
     // TODO: maybe move all of this into ApplicationPrimaryModel class
     //v1
     static createJobApp = async (req, res, next) => {
@@ -66,6 +65,9 @@ export class publicInfoController {
             delete req.body.application_primary.id
 
         const primary_info = await PrimaryInfo.create(req.body.application_primary)
+        if (!primary_info)
+            throw new APIError("Failed to create job application", httpStatus.INTERNAL_SERVER_ERROR)
+
         //we don't have to worry about stray data since they'll be caught in validation
         const app_data = _.omit(req.body, ["application_primary"])
 
@@ -86,28 +88,12 @@ export class publicInfoController {
                 case "application_employment_history":
                     class_model = EmploymentHistory
                     break;
-                case "application_reference": // just incase
-                case "application_references":// default
+                case "application_reference":
                     class_model = References
                     break;
                 default:
-                    throw new APIError(`Invalid key during app creation '${key}'`, httpStatus.INTERNAL_SERVER_ERROR)
+                    throw new APIError(`Invalid key during app creation ${key}`, httpStatus.INTERNAL_SERVER_ERROR)
             }
-
-            // assign the foreign key to entry(ies)
-            // bulkCreate or create based on whether the value is an array
-            /*  if (Array.isArray(value) || value instanceof Array) {
-                 value.forEach((entry) => {
-                     entry.application_fk_id = primary_info.id
-                 })
-                 await class_model.bulkCreate(value, {
-                     fields: Object.keys
-                 });
-             }
-             else {
-                 value.application_fk_id = primary_info.id
-                 await class_model.create(value);
-             } */
 
             let associationFunctionName =
                 `${PrimaryInfo.name[0].toUpperCase()}${PrimaryInfo.name.slice(1)}${PrimaryInfo.options.freezeTableName ? "" : "s"}`;
