@@ -18,6 +18,8 @@ import { model as AppPrimary } from "./models/application_models/primaryModel.js
 import { model as AppEducationHistory } from "./models/application_models/educationHistoryModel.js";
 import { model as AppEmploymentHistory } from "./models/application_models/employmentHistoryModel.js";
 import { model as AppReferences } from "./models/application_models/referencesModel.js";
+import { model as MenuTable } from "./models/menu_Models/menuModel.js";
+import { model as CatTable } from "./models/menu_Models/categoryModel.js";
 
 //initialization
 const app = express();
@@ -52,11 +54,10 @@ app.use(error_handler.handler)
 
 //database connection
 await mariadb_connector.check_connection();
+
 /* await mariadb_connector.initializeTables(true,
-    AppPrimary,
-    AppEducationHistory,
-    AppEmploymentHistory,
-    AppReferences,
+    CatTable,
+    MenuTable,
 )
  */
 app.listen(env_config.APP_PORT, () => {

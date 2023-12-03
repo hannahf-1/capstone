@@ -1,3 +1,5 @@
+"use strict";
+
 import winston from "winston";
 import env_config from "./env_config.js";
 

@@ -1,3 +1,5 @@
+"use strict";
+
 document.getElementById("main").innerHTML = "Request Script Loaded";
 
 

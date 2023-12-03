@@ -1,3 +1,5 @@
+"use strict";
+
 import httpStatus from 'http-status';
 import Joi from 'joi';
 import env_config from '../config/env_config.js';

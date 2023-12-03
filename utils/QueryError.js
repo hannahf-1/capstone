@@ -1,3 +1,5 @@
+"use strict";
+
 import APIError from "./APIError";
 
 // TODO: Implement this class

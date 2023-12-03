@@ -1,7 +1,7 @@
 "use strict";
 
 import { DataTypes, Model } from "sequelize";
-import mariadb_connector from "../config/maria_db.js";
+import mariadb_connector from "../../config/maria_db.js";
 
 class MenuModel extends Model {
     static async createMenuItem(body) {
@@ -24,7 +24,7 @@ class MenuModel extends Model {
     }
 
     static async findBy(category, custom_query) {
-        const menuItem = await MenuModel.findAll(custom_query)
+        return await MenuModel.findAll(custom_query)
     }
 
     static async updateMenuItem(itemID, updatedValues) {
@@ -44,9 +44,9 @@ class MenuModel extends Model {
 }
 
 MenuModel.init({
-    itemID: {
+    id: {
         type: DataTypes.INTEGER.UNSIGNED,
-        allowNull: false,
+        allowNull: true,
         primaryKey: true,
         autoIncrement: true,
     },
@@ -57,26 +57,32 @@ MenuModel.init({
     },
 
     //APPETIZERS, drink 
-    category: {
+    /* category: {
         type: DataTypes.STRING(25),
         allowNull: true,
-    },
+    }, 
 
     category2: {
         type: DataTypes.STRING(25),
         allowNull: true,
-    },
+    }, */
 
     price: {
         type: DataTypes.DECIMAL,
         allowNull: false
     },
+
+    description: {
+        type: DataTypes.STRING(50),
+        allowNull: true,
+    },
+
 }, {
     sequelize: mariadb_connector.sequelize,
+    freezeTableName: true,
     timestamps: false,
-    modelName: "menu"
+    paranoid: true,
+    modelName: "menu",
 })
-
-
 
 export { MenuModel as model }

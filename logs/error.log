@@ -1,0 +1,74 @@
+2023-12-03 04:44:50.077 AM: error: Error
+    at Query.run (/home/admin/dev/capstone/node_modules/sequelize/lib/dialects/mariadb/query.js:53:25)
+    at /home/admin/dev/capstone/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/admin/dev/capstone/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async ApplicationPrimaryModel.save (/home/admin/dev/capstone/node_modules/sequelize/lib/model.js:2490:35)
+    at async application_primary.create (/home/admin/dev/capstone/node_modules/sequelize/lib/model.js:1362:12)
+    at async createJobApp (file:///home/admin/dev/capstone/controllers/publicInfoController.js:67:30)
+2023-12-03 04:45:04.131 AM: error: Error
+    at Query.run (/home/admin/dev/capstone/node_modules/sequelize/lib/dialects/mariadb/query.js:53:25)
+    at /home/admin/dev/capstone/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/admin/dev/capstone/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async ApplicationPrimaryModel.save (/home/admin/dev/capstone/node_modules/sequelize/lib/model.js:2490:35)
+    at async application_primary.create (/home/admin/dev/capstone/node_modules/sequelize/lib/model.js:1362:12)
+    at async createJobApp (file:///home/admin/dev/capstone/controllers/publicInfoController.js:67:30)
+2023-12-03 04:45:19.616 AM: error: Error
+    at Query.run (/home/admin/dev/capstone/node_modules/sequelize/lib/dialects/mariadb/query.js:53:25)
+    at /home/admin/dev/capstone/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.insert (/home/admin/dev/capstone/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async ApplicationPrimaryModel.save (/home/admin/dev/capstone/node_modules/sequelize/lib/model.js:2490:35)
+    at async application_primary.create (/home/admin/dev/capstone/node_modules/sequelize/lib/model.js:1362:12)
+    at async createJobApp (file:///home/admin/dev/capstone/controllers/publicInfoController.js:67:30)
+2023-12-03 04:47:55.521 AM: error: 	An err has occured: 
+ (conn=2691, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `application_primary`; - parameters:[]
+2023-12-03 04:48:00.738 AM: error: ValidationError: "body.application_primary.nice" is not allowed
+2023-12-03 04:48:41.252 AM: error: 	An err has occured: 
+ (conn=2693, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `application_primary`; - parameters:[]
+2023-12-03 04:49:46.794 AM: error: 	An err has occured: 
+ (conn=2699, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `application_primary`; - parameters:[]
+2023-12-03 04:51:25.489 AM: error: ValidationError: "body.application_employment_history[1].wtf" is not allowed
+2023-12-03 06:02:06.285 AM: error: 	An err has occured: 
+ (conn=2715, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `application_primary`; - parameters:[]
+2023-12-03 08:39:49.016 AM: error: 	An err has occured: 
+ (conn=2817, no: 1005, SQLState: HY000) Can't create table `miguelsDB_dev`.`menus` (errno: 150 "Foreign key constraint is incorrectly formed")
+sql: CREATE TABLE IF NOT EXISTS `menus` (`name` VARCHAR(25) NOT NULL , `description` VARCHAR(100), `category` INTEGER UNSIGNED, `category2` INTEGER UNSIGNED, PRIMARY KEY (`name`), FOREIGN KEY (`category`) REFERENCES `menus` (`id`) ON DELETE SET NULL ON UPDATE C... - parameters:[]
+2023-12-03 08:41:56.368 AM: error: 	An err has occured: 
+ (conn=2853, no: 1005, SQLState: HY000) Can't create table `miguelsDB_dev`.`menus` (errno: 150 "Foreign key constraint is incorrectly formed")
+sql: CREATE TABLE IF NOT EXISTS `menus` (`name` VARCHAR(25) NOT NULL , `description` VARCHAR(100), `category` INTEGER UNSIGNED, `category2` INTEGER UNSIGNED, PRIMARY KEY (`name`), FOREIGN KEY (`category`) REFERENCES `menus` (`id`) ON DELETE SET NULL ON UPDATE C... - parameters:[]
+2023-12-03 08:59:34.852 AM: error: 	An err has occured: 
+ (conn=2865, no: 1005, SQLState: HY000) Can't create table `miguelsDB_dev`.`menu` (errno: 150 "Foreign key constraint is incorrectly formed")
+sql: CREATE TABLE IF NOT EXISTS `menu` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(25) NOT NULL, `price` DECIMAL NOT NULL, `description` VARCHAR(50), `category` VARCHAR(25), PRIMARY KEY (`id`), FOREIGN KEY (`category`) REFERENCES `menus` (`name`) ON ... - parameters:[]
+2023-12-03 09:02:42.685 AM: error: 	An err has occured: 
+ (conn=2893, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `menu`; - parameters:[]
+2023-12-03 09:03:46.444 AM: error: 	An err has occured: 
+ (conn=2939, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `menu`; - parameters:[]
+2023-12-03 09:15:07.759 AM: error: 	An err has occured: 
+ (conn=3087, no: 1005, SQLState: HY000) Can't create table `miguelsDB_dev`.`menu` (errno: 150 "Foreign key constraint is incorrectly formed")
+sql: CREATE TABLE IF NOT EXISTS `menu` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(25) NOT NULL, `price` DECIMAL NOT NULL, `description` VARCHAR(50), `category` VARCHAR(25), `category2` VARCHAR(25), PRIMARY KEY (`id`), FOREIGN KEY (`category`) REFERE... - parameters:[]
+2023-12-03 09:16:27.577 AM: error: 	An err has occured: 
+ (conn=3107, no: 1005, SQLState: HY000) Can't create table `miguelsDB_dev`.`menu` (errno: 150 "Foreign key constraint is incorrectly formed")
+sql: CREATE TABLE IF NOT EXISTS `menu` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(25) NOT NULL, `price` DECIMAL NOT NULL, `description` VARCHAR(50), `category` VARCHAR(25), PRIMARY KEY (`id`), FOREIGN KEY (`category`) REFERENCES `categories` (`name`... - parameters:[]
+2023-12-03 09:17:39.796 AM: error: 	An err has occured: 
+ (conn=3109, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `categories`; - parameters:[]
+2023-12-03 09:18:52.003 AM: error: 	An err has occured: 
+ (conn=3139, no: 1005, SQLState: HY000) Can't create table `miguelsDB_dev`.`menu` (errno: 150 "Foreign key constraint is incorrectly formed")
+sql: CREATE TABLE IF NOT EXISTS `menu` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(25) NOT NULL, `price` DECIMAL NOT NULL, `description` VARCHAR(50), `category` VARCHAR(25), PRIMARY KEY (`id`), FOREIGN KEY (`category`) REFERENCES `categories` (`name`... - parameters:[]
+2023-12-03 09:19:25.749 AM: error: 	An err has occured: 
+ (conn=3157, no: 1005, SQLState: HY000) Can't create table `miguelsDB_dev`.`menu` (errno: 150 "Foreign key constraint is incorrectly formed")
+sql: CREATE TABLE IF NOT EXISTS `menu` (`id` INTEGER UNSIGNED auto_increment , `name` VARCHAR(25) NOT NULL, `price` DECIMAL NOT NULL, `description` VARCHAR(50), `cat` VARCHAR(25), PRIMARY KEY (`id`), FOREIGN KEY (`cat`) REFERENCES `categories` (`name`) ON DELET... - parameters:[]
+2023-12-03 09:52:30.718 AM: error: 	An err has occured: 
+ (conn=3239, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `categories`; - parameters:[]
+2023-12-03 09:55:09.537 AM: error: 	An err has occured: 
+ (conn=3341, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `categories`; - parameters:[]

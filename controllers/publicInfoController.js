@@ -4,7 +4,7 @@
 import httpStatus from "http-status";
 import _ from "lodash";
 
-import { model as MenuItems } from "../models/menuModel.js";
+import { model as MenuItems } from "../models/menu_Models/menuModel.js";
 import { model as Reservations } from "../models/reservationModel.js";
 import { model as Events } from "../models/eventModel.js";
 import { model as Review } from "../models/reviewModel.js";
@@ -116,8 +116,5 @@ export class publicInfoController {
     }
     
 }
-
-
-
 
 export default publicInfoController;

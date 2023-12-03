@@ -42,7 +42,7 @@ ApplicationPrimaryModel.init(
 
         middle_name: {
             type: DataTypes.STRING(100),
-            allowNull: false,
+            allowNull: true,
         },
 
         street_address: {
@@ -67,7 +67,7 @@ ApplicationPrimaryModel.init(
 
         home_phone: {
             type: DataTypes.STRING(15),
-            allowNull: false,
+            allowNull: true,
         },
 
         cell_phone: {
@@ -82,7 +82,7 @@ ApplicationPrimaryModel.init(
 
         social_security: {
             type: DataTypes.STRING(12),
-            allowNull: false,
+            allowNull: true,
         },
 
         us_citizen: {
