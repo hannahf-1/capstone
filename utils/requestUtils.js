@@ -73,6 +73,15 @@ export class RequestUtils {
             logger.http(`Sent data to ${hostname}`);
     }
 
+    
+    /*
+    	returns the month token for luxon given the month_value param
+    	e.g input: "12" (december), 	output: MM
+    		input: "October"			output: MMMM
+    		input: "jan"				output: MMM
+
+      more luxon tokens here https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+     */
     // TODO: better error handling using custom errors and httpStatus
     static #getMonthAbbreviation = (month_value = '') => {
         if (!isNaN(month_value) && Number.isInteger(Number(month_value))) {
